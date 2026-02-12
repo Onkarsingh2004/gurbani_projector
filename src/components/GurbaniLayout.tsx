@@ -14,7 +14,7 @@ export const StatusIndicator = ({ listening, errorMessage }: { listening: boolea
         <div className={`w-3 h-3 rounded-full ${listening ? 'bg-[#d42c5c] shadow-[0_0_15px_#d42c5c]' : 'bg-black/10'}`}></div>
         <div className="flex flex-col">
             <span className="text-black/30 text-[10px] tracking-[0.4em] uppercase font-black">{listening ? 'LISTENING' : 'STANDBY'}</span>
-            {listening && <span className="text-[#d42c5c]/50 text-[8px] tracking-widest font-bold uppercase mt-1">ENGLISH MODE (EN-IN)</span>}
+            {listening && <span className="text-[#d42c5c]/50 text-[8px] tracking-widest font-bold uppercase mt-1">GURMUKHI MODE (PA-IN)</span>}
             <span id="debug-live-text" className="text-black/20 text-[10px] uppercase font-mono mt-1 max-w-[200px] whitespace-nowrap overflow-hidden text-ellipsis"></span>
         </div>
         {errorMessage && <span className="text-red-600 text-[10px] font-bold uppercase border-l pl-4 border-black/10">{errorMessage}</span>}

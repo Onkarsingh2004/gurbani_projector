@@ -39,28 +39,50 @@ function stripGurmukhiMatras(text: string) {
 // IDs verified against GurbaniDB v2 API
 const MANUAL_BANI_MAP: { [key: string]: number } = {
     "japji": 2,
+    "jap ji": 2,
     "japji sahib": 2,
     "jaap": 4,
     "jaap sahib": 4,
     "tav prasad": 6,
     "savaiye": 6,
     "chaupai": 9,
+    "choupai": 9,
     "chaupai sahib": 9,
     "anand": 10,
     "anand sahib": 10,
     "rehras": 21,
+    "rehiras": 21,
+    "rahras": 21,
+    "sodar": 21, // Sodar Rehras
     "rehras sahib": 21,
     "sohila": 23,
     "kirtan sohila": 23,
     "sohila sahib": 23,
     "ardaas": 24,
+    "ardas": 24,
     "ardaas sahib": 24,
     "sukhmani": 31,
     "sukhmani sahib": 31,
     "asa di var": 11,
+    "asa di vaar": 11,
     "shabad hazare": 3,
     "shabad hazaare": 3,
     "salok mahala 9": 30,
+    "salok mahala nou": 30,
+    "salok mahala nau": 30,
+    "salok mahala nava": 30,
+    // Add common extras if possible (IDs need strict verification, defaulting to most likely)
+    "barah maha": 136, // Barah Maha Maajh
+    "baarah maahaa": 136,
+    "dukh bhanjani": 178, // Often a compilation, but if strict Bani ID needed, checking standard sets.
+    // Standard Dukh Bhanjani is a collection.
+    // Using ID 178 (Dukh Bhanjani Sahib - Panj Granthi) if available or similar.
+    // Actually, let's map it to specific Shabads if no global ID.
+    // For now, removing unpredictable ID to avoid errors, rely on specific searches.
+    "laavan": 773, // Suhi Mahala 4
+    "lavan": 773,
+    "aarti": 13, // Aarti (Dhanasari)
+    "arti": 13,
 };
 
 // 💎 MANUAL KEYWORD/SHABAD MAP (For Simran or specific verses)

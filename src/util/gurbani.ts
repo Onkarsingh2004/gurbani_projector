@@ -27,9 +27,17 @@ export const cleanTranscript = (text: string) => {
     // if (potentialClean.length > 0) cleaned = potentialClean;
 
     const numberMap: { [key: string]: string } = {
-        "pahila": "1", "pehla": "1", "one": "1", "dooja": "2", "duja": "2", "two": "2",
-        "teeja": "3", "trija": "3", "three": "3", "chautha": "4", "four": "4",
+        "pahila": "1", "pehla": "1", "one": "1", "ek": "1", "ik": "1",
+        "dooja": "2", "duja": "2", "two": "2", "do": "2",
+        "teeja": "3", "trija": "3", "three": "3", "teen": "3", "tin": "3",
+        "chautha": "4", "four": "4", "chaar": "4", "char": "4",
         "pa": "pa", // prevent 'pa' -> 'pa' confusion if existing
+        "panj": "5", "paanch": "5", "panch": "5", "five": "5",
+        "che": "6", "chhe": "6", "six": "6",
+        "saat": "7", "sat": "7", "seven": "7",
+        "aath": "8", "ath": "8", "eight": "8",
+        "nau": "9", "nava": "9", "naavan": "9", "nine": "9",
+        "das": "10", "ten": "10", "duss": "10"
     };
     // Only apply number map to English words to avoid messing up Gurmukhi
     Object.keys(numberMap).forEach(word => {

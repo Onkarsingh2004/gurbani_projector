@@ -138,7 +138,7 @@ export const useGurbaniProjector = () => {
         }
 
         try {
-            SpeechRecognition.startListening({ continuous: true, language: 'en-IN' });
+            SpeechRecognition.startListening({ continuous: true, language: 'pa-IN' });
             if (typeof navigator !== 'undefined' && 'wakeLock' in navigator) {
                 (navigator as any).wakeLock.request('screen').then((wl: any) => wakeLockRef.current = wl).catch(() => { });
             }
