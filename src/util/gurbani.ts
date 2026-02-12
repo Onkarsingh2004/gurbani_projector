@@ -10,15 +10,8 @@ export const cleanTranscript = (text: string) => {
     cleaned = cleaned.replace(/[^a-z0-9\s\u0A00-\u0A7F]/g, '');
 
     // Remove Gurmukhi Matras AND Diacritics (Keep only Akhars + Ek Onkar)
-    // Ranges: 
-    // 0A01-0A03 (Sign Adak Bindi, Bindi, Visarga)
-    // 0A3C (Nukta)
-    // 0A3E-0A4D (Vowels: Kanna, Sihari, Bihari, ... Virama)
-    // 0A51 (Udaat)
-    // 0A70-0A71 (Tippi, Addak)
-    // 0A75 (Yakash)
-    // EXCLUDES: 0A72 (Iri), 0A73 (Ura), 0A74 (Ek Onkar)
-    cleaned = cleaned.replace(/[\u0A01-\u0A03\u0A3C\u0A3E-\u0A4D\u0A51\u0A70-\u0A71\u0A75]/g, "");
+    // DISABLED: We now keep matras to allow full-text search strategies (Type 3) to work correctly in Backend.
+    // cleaned = cleaned.replace(/[\u0A01-\u0A03\u0A3C\u0A3E-\u0A4D\u0A51\u0A70-\u0A71\u0A75]/g, "");
 
     // Stop words removal is DISABLED to ensure accurate Acronym generation (e.g. "Waheguru Ji Ka Khalsa" -> "WJKK")
     // const stopWords = ["ji", "haye", "da", "di", "de", "ne", "nu", "ki", "ka", "ke", "ko", "si", "hai", "han", "tha", "the", "thi"];
