@@ -37,53 +37,48 @@ function stripGurmukhiMatras(text: string) {
 
 // 🗺️ MANUAL BANI MAP (Fallback/Priority for common Nitnem)
 // IDs verified against GurbaniDB v2 API
+// 🗺️ MANUAL BANI MAP (Fallback/Priority for common Nitnem)
+// IDs verified against GurbaniDB v2 API
 const MANUAL_BANI_MAP: { [key: string]: number } = {
-    "japji": 2,
-    "jap ji": 2,
-    "japji sahib": 2,
-    "jaap": 4,
-    "jaap sahib": 4,
-    "tav prasad": 6,
-    "savaiye": 6,
-    "chaupai": 9,
-    "choupai": 9,
-    "chaupai sahib": 9,
-    "anand": 10,
-    "anand sahib": 10,
-    "rehras": 21,
-    "rehiras": 21,
-    "rahras": 21,
-    "sodar": 21, // Sodar Rehras
-    "rehras sahib": 21,
-    "sohila": 23,
-    "kirtan sohila": 23,
-    "sohila sahib": 23,
-    "ardaas": 24,
-    "ardas": 24,
-    "ardaas sahib": 24,
-    "sukhmani": 31,
-    "sukhmani sahib": 31,
-    "asa di var": 11,
-    "asa di vaar": 11,
-    "shabad hazare": 3,
-    "shabad hazaare": 3,
-    "salok mahala 9": 30,
-    "salok mahala nou": 30,
-    "salok mahala nau": 30,
-    "salok mahala nava": 30,
-    // Add common extras if possible (IDs need strict verification, defaulting to most likely)
-    "barah maha": 136, // Barah Maha Maajh
-    "baarah maahaa": 136,
-    "dukh bhanjani": 178, // Often a compilation, but if strict Bani ID needed, checking standard sets.
-    // Standard Dukh Bhanjani is a collection.
-    // Using ID 178 (Dukh Bhanjani Sahib - Panj Granthi) if available or similar.
-    // Actually, let's map it to specific Shabads if no global ID.
-    // For now, removing unpredictable ID to avoid errors, rely on specific searches.
-    "laavan": 773, // Suhi Mahala 4
-    "lavan": 773,
-    "aarti": 13, // Aarti (Dhanasari)
-    "arti": 13,
+    // English Keys
+    "japji": 2, "jap ji": 2, "japji sahib": 2,
+    "jaap": 4, "jaap sahib": 4,
+    "tav prasad": 6, "savaiye": 6,
+    "chaupai": 9, "choupai": 9, "chaupai sahib": 9,
+    "anand": 10, "anand sahib": 10,
+    "rehras": 21, "rehiras": 21, "rahras": 21, "sodar": 21, "rehras sahib": 21,
+    "sohila": 23, "kirtan sohila": 23, "sohila sahib": 23,
+    "ardaas": 24, "ardas": 24, "ardaas sahib": 24,
+    "sukhmani": 31, "sukhmani sahib": 31,
+    "asa di var": 11, "asa di vaar": 11,
+    "shabad hazare": 3, "shabad hazaare": 3,
+    "salok mahala 9": 30, "salok mahala nou": 30, "salok mahala nau": 30, "salok mahala nava": 30,
+    "barah maha": 136, "baarah maahaa": 136,
+    "dukh bhanjani": 178,
+    "laavan": 773, "lavan": 773,
+    "aarti": 13, "arti": 13,
+
+    // Gurmukhi Keys (New)
+    "ਜਪੁ": 2, "ਜਪ": 2, "ਜਪੁਜੀ": 2, "ਜਪੁ ਜੀ ਸਾਹਿਬ": 2,
+    "ਜਾਪੁ": 4, "ਜਾਪ": 4, "ਜਾਪੁ ਸਾਹਿਬ": 4,
+    "ਤ੍ਵ ਪ੍ਰਸਾਦਿ": 6, "ਸਵਯੇ": 6,
+    "ਚੌਪਈ": 9, "ਚੌਪਈ ਸਾਹਿਬ": 9, "ਕਬਯੋਬਾਚ ਬੇਨਤੀ ਚੌਪਈ": 9,
+    "ਅਨੰਦ": 10, "ਅਨੰਦੁ": 10, "ਅਨੰਦ ਸਾਹਿਬ": 10,
+    "ਰਹਿਰਾਸ": 21, "ਸੋਦਰੁ": 21, "ਸੋਦਰ": 21, "ਰਹਿਰਾਸ ਸਾਹਿਬ": 21,
+    "ਸੋਹਿਲਾ": 23, "ਕੀਰਤਨ ਸੋਹਿਲਾ": 23,
+    "ਅਰਦਾਸ": 24,
+    "ਸੁਖਮਨੀ": 31, "ਸੁਖਮਨੀ ਸਾਹਿਬ": 31,
+    "ਆਸਾ ਦੀ ਵਾਰ": 11,
+    "ਸ਼ਬਦ ਹਜ਼ਾਰੇ": 3, "ਸ਼ਬਦ ਹਜਾਰੇ": 3,
+    "ਸਲੋਕ ਮਹਲਾ ੯": 30, "ਸਲੋਕ ਮਹਲਾ 9": 30,
+    "ਬਾਰਹ ਮਾਹਾ": 136,
+    "ਲਾਵਾਂ": 773,
+    "ਆਰਤੀ": 13
 };
+
+// ... (rest of imports/helpers)
+
+// ...
 
 // 💎 MANUAL KEYWORD/SHABAD MAP (For Simran or specific verses)
 const MANUAL_KEYWORD_MAP: { [key: string]: number } = {
@@ -266,17 +261,26 @@ export async function POST(req: Request) {
                 // If user explicitly asked for acronym (unlikely in voice flow, but possible via UI)
                 strategies.push({ q: acronym || trimmedQuery, type: 1 });
                 strategies.push({ q: acronym || trimmedQuery, type: 0 });
+            } else if (isGurmukhi) {
+                // 🟠 Gurmukhi Input Strategy
+                // Type 3: Gurmukhi Full/Partial (Best for full lines)
+                strategies.push({ q: trimmedQuery, type: 3 });
+
+                // Fallback: Gurmukhi First Letters (if manual acronym construction fails or server handles differently)
+                if (wordCount > 1) {
+                    strategies.push({ q: generatedAcronym, type: 0 });
+                }
             } else {
-                // 1. 🥇 PRIMARY: Full Text Search
-                // Try to match the exact words spoken
-                strategies.push({ q: trimmedQuery, type: 4 }); // Full Word/Fuzzy
-                strategies.push({ q: trimmedQuery, type: 8 }); // Broad search
+                // 🔵 English/Roman Input Strategy
+                // Type 4: English Full Word/Fuzzy
+                strategies.push({ q: trimmedQuery, type: 4 });
+
+                // Broad search (Type 8 or similar if supported, otherwise stick to 4)
+                strategies.push({ q: trimmedQuery, type: 2 }); // Type 2 is often English Fuzzy
 
                 // 2. 🥈 FALLBACK: First Letters (Acronym)
-                // If full text fails, search using the first letter of each word
                 if (wordCount > 1) {
                     strategies.push({ q: generatedAcronym, type: 1 }); // English First Letters
-                    strategies.push({ q: generatedAcronym, type: 0 }); // Gurmukhi First Letters
                 }
             }
 
