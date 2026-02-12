@@ -86,7 +86,7 @@ export default function Home() {
               <p className="text-[#d42c5c] text-[10px] font-black tracking-[0.3em] uppercase mb-1 opacity-40">
                 {lastSearch ? "Matching" : "Listening"}
               </p>
-              <p className="text-[#2d0a0a] text-xs font-bold uppercase tracking-widest truncate">
+              <p className="text-[#2d0a0a] text-xl font-bold tracking-wide truncate" style={{ fontFamily: "'Noto Serif Gurmukhi', serif" }}>
                 {lastSearch || transcript.split(" ").pop()}
               </p>
             </div>
