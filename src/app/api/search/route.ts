@@ -263,12 +263,17 @@ export async function POST(req: Request) {
                 strategies.push({ q: acronym || trimmedQuery, type: 0 });
             } else if (isGurmukhi) {
                 // 🟠 Gurmukhi Input Strategy
-                // Type 3: Gurmukhi Full/Partial (Best for full lines)
-                strategies.push({ q: trimmedQuery, type: 3 });
+                // Strategy: Convert full text to First Letter Acronym (Gurmukhi) and search using that (Type 3).
+                // This is robust against matra variations (e.g. "ਸੋ ਸਤਿਗੁਰੁ" -> "ਸਸ" matches correctly).
 
-                // Fallback: Gurmukhi First Letters (if manual acronym construction fails or server handles differently)
+                const gAcronym = trimmedQuery.split(/\s+/).map(w => w[0]).join("");
+
+                // Type 3: First Letters Search (Gurmukhi) - usually expects acronym string
+                strategies.push({ q: gAcronym, type: 3 });
+
+                // Fallback: Use generated acronym with Type 0 if different (though Type 3 seems standard for GM acronyms)
                 if (wordCount > 1) {
-                    strategies.push({ q: generatedAcronym, type: 0 });
+                    strategies.push({ q: generatedAcronym, type: 0 }); // Just in case type 0 differs
                 }
             } else {
                 // 🔵 English/Roman Input Strategy
