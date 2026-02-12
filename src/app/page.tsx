@@ -87,7 +87,7 @@ export default function Home() {
                 {lastSearch ? "Matching" : "Listening"}
               </p>
               <p className="text-[#2d0a0a] text-xl font-bold tracking-wide truncate" style={{ fontFamily: "'Noto Serif Gurmukhi', serif" }}>
-                {transcript.split(" ").slice(-1)[0] || ""}
+                {lastSearch || transcript}
               </p>
             </div>
           )}
