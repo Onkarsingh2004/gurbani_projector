@@ -1,0 +1,42 @@
+🚀 Starting Search API Tests...
+
+
+-----------------------------------
+🔍 Testing: "dhan dhan ramdas gur" (Perfect Match Expectation)
+✅ MATCH FOUND in 3634ms!
+   Source: Sri Guru Granth Sahib Ji
+   Gurmukhi: ਧੰਨੁ ਧੰਨੁ ਰਾਮਦਾਸ ਗੁਰੁ ਜਿਨਿ ਸਿਰਿਆ ਤਿਨੈ ਸਵਾਰਿਆ ॥
+   Translit: dha(n)n dha(n)n raamadhaas gur jin siriaa tinai savaariaa ||
+   Confidence: 70%
+   Search Type: 4 (1=Acronym, 0=Acronym, 4=FullText, 8=Broad)
+   ℹ️ Used Standard Full Text Search
+
+-----------------------------------
+🔍 Testing: "tati vao na lagi" (Fallback Test 1: Phonetic Mismatch (tati vao))
+✅ MATCH FOUND in 1924ms!
+   Source: Sri Guru Granth Sahib Ji
+   Gurmukhi: ਤਤੀ ਵਾਉ ਨ ਲਗਈ ਜਿਨ ਮਨਿ ਵੁਠਾ ਆਇ ਜੀਉ ॥੨॥
+   Translit: tatee vaau na lagiee jin man vuThaa aai jeeau ||2||
+   Confidence: 70%
+   Search Type: 4 (1=Acronym, 0=Acronym, 4=FullText, 8=Broad)
+   ℹ️ Used Standard Full Text Search
+
+-----------------------------------
+🔍 Testing: "jo mange thakur apne te" (Fallback Test 2: Vowel Differences)
+✅ MATCH FOUND in 1123ms!
+   Source: Sri Guru Granth Sahib Ji
+   Gurmukhi: ਜੋ ਮਾਗਹਿ ਠਾਕੁਰ ਅਪੁਨੇ ਤੇ ਸੋਈ ਸੋਈ ਦੇਵੈ ॥
+   Translit: jo maageh Thaakur apune te soiee soiee dhevai ||
+   Confidence: 70%
+   Search Type: 4 (1=Acronym, 0=Acronym, 4=FullText, 8=Broad)
+   ℹ️ Used Standard Full Text Search
+
+-----------------------------------
+🔍 Testing: "santa ke karaj aap khaloya" (Fallback Test 3: Common variant)
+✅ MATCH FOUND in 2389ms!
+   Source: Sri Guru Granth Sahib Ji
+   Gurmukhi: ਸੰਤਾ ਕੇ ਕਾਰਜਿ ਆਪਿ ਖਲੋਇਆ ਹਰਿ ਕੰਮੁ ਕਰਾਵਣਿ ਆਇਆ ਰਾਮ ॥
+   Translit: sa(n)taa ke kaaraj aap khaloiaa har ka(n)m karaavan aaiaa raam ||
+   Confidence: 70%
+   Search Type: 4 (1=Acronym, 0=Acronym, 4=FullText, 8=Broad)
+   ℹ️ Used Standard Full Text Search

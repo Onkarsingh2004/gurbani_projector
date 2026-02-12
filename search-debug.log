@@ -1,0 +1,172 @@
+Strategy 8 | Query: aavo daya | URL: https://api.banidb.com/v2/search/aavo daya?source=all&searchtype=8&results=50
+Result: a(n)birat dharame ||
+Acronym Match: false | Score Match: false
+
+Strategy 4 | Query: aavo daya | URL: https://api.banidb.com/v2/search/aavo daya?source=all&searchtype=4&results=50
+Result: asa(n)kh satee asa(n)kh dhaataar ||
+Acronym Match: false | Score Match: false
+
+Strategy 3 | Query: ad | URL: https://api.banidb.com/v2/search/ad?source=all&searchtype=3&results=50
+Result: bhukhiaa bhukh na utaree je ba(n)naa pureeaa bhaar ||
+Acronym Match: false | Score Match: false
+
+Strategy 8 | Query: anand bhaya meri maaye | URL: https://api.banidb.com/v2/search/anand bhaya meri maaye?source=all&searchtype=8&results=50
+Result: anadh muraaree mahaa(n) purakh kaliaanaa kul kaval rasaalaa|
+Acronym Match: false | Score Match: false
+
+Strategy 4 | Query: anand bhaya meri maaye | URL: https://api.banidb.com/v2/search/anand bhaya meri maaye?source=all&searchtype=4&results=50
+Result: aape bakhase mel milaae ||
+Acronym Match: false | Score Match: false
+
+Strategy 8 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir ghar baiso?source=all&searchtype=8&results=50
+Result: ghaau lage tin ko ran bhoom mai toot pare dhar te sir niaare ||
+Acronym Match: false | Score Match: false
+
+Strategy 4 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir ghar baiso?source=all&searchtype=4&results=50
+Result: har bhagataa no dhei ana(n)dh thir gharee bahaalian ||
+Acronym Match: false | Score Match: true
+
+Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=8&results=50
+Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
+Acronym Match: false | Score Match: false
+
+Strategy 5 | Query: aavo daya | URL: https://api.banidb.com/v2/search/aavo daya?source=all&searchtype=5&results=50
+Result: dheen dhuneeaa dhar kama(n)dh aa(n) paree rukhhasaar maa
+Acronym Match: false | Score Match: false
+
+Strategy 4 | Query: aavo daya | URL: https://api.banidb.com/v2/search/aavo daya?source=all&searchtype=4&results=50
+Result: asa(n)kh satee asa(n)kh dhaataar ||
+Acronym Match: false | Score Match: false
+
+Strategy 8 | Query: aavo daya | URL: https://api.banidb.com/v2/search/aavo daya?source=all&searchtype=8&results=50
+Result: a(n)birat dharame ||
+Acronym Match: false | Score Match: false
+
+Strategy 5 | Query: ad | URL: https://api.banidb.com/v2/search/ad?source=all&searchtype=5&results=50
+Result: dheen dhuneeaa dhar kama(n)dh aa(n) paree rukhhasaar maa
+Acronym Match: false | Score Match: false
+
+Strategy 4 | Query: anand bhaya meri maaye | URL: https://api.banidb.com/v2/search/anand bhaya meri maaye?source=all&searchtype=4&results=50
+Result: aape bakhase mel milaae ||
+Acronym Match: false | Score Match: false
+
+Strategy 8 | Query: anand bhaya meri maaye | URL: https://api.banidb.com/v2/search/anand bhaya meri maaye?source=all&searchtype=8&results=50
+Result: anadh muraaree mahaa(n) purakh kaliaanaa kul kaval rasaalaa|
+Acronym Match: false | Score Match: false
+
+Strategy 5 | Query: abmm | URL: https://api.banidb.com/v2/search/abmm?source=all&searchtype=5&results=50
+Result: dheen dhuneeaa dhar kama(n)dh aa(n) paree rukhhasaar maa
+Acronym Match: false | Score Match: false
+
+Strategy 4 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir ghar baiso?source=all&searchtype=4&results=50
+Result: har bhagataa no dhei ana(n)dh thir gharee bahaalian ||
+Acronym Match: false | Score Match: true
+
+Strategy 5 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=5&results=50
+Result: dheen dhuneeaa dhar kama(n)dh aa(n) paree rukhhasaar maa
+Acronym Match: false | Score Match: false
+
+Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=8&results=50
+Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
+Acronym Match: false | Score Match: false
+
+Strategy 5 | Query: www | URL: https://api.banidb.com/v2/search/www?source=all&searchtype=5&results=50
+Result: dheen dhuneeaa dhar kama(n)dh aa(n) paree rukhhasaar maa
+Acronym Match: false | Score Match: false
+
+Strategy 0 | Query: ad | URL: https://api.banidb.com/v2/search/ad?source=all&results=50
+Result: aupaja(n)p dharasan keejai taa kaa ||1||
+Acronym Match: true | Score Match: false
+
+Strategy 4 | Query: anand bhaya meri maaye | URL: https://api.banidb.com/v2/search/anand bhaya meri maaye?source=all&searchtype=4&results=50
+Result: aape bakhase mel milaae ||
+Acronym Match: false | Score Match: false
+
+Strategy 8 | Query: anand bhaya meri maaye | URL: https://api.banidb.com/v2/search/anand bhaya meri maaye?source=all&searchtype=8&results=50
+Result: anadh muraaree mahaa(n) purakh kaliaanaa kul kaval rasaalaa|
+Acronym Match: false | Score Match: false
+
+Strategy 4 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir ghar baiso?source=all&searchtype=4&results=50
+Result: har bhagataa no dhei ana(n)dh thir gharee bahaalian ||
+Acronym Match: false | Score Match: true
+
+Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=8&results=50
+Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
+Acronym Match: false | Score Match: false
+
+Strategy 0 | Query: ad | URL: https://api.banidb.com/v2/search/ad?source=all&results=50
+Result: aupaja(n)p dharasan keejai taa kaa ||1||
+Acronym Match: true | Score Match: false
+
+Strategy 4 | Query: anand bhaya meri maaye | URL: https://api.banidb.com/v2/search/anand bhaya meri maaye?source=all&searchtype=4&results=50
+Result: aape bakhase mel milaae ||
+Acronym Match: false | Score Match: false
+
+Strategy 8 | Query: anand bhaya meri maaye | URL: https://api.banidb.com/v2/search/anand bhaya meri maaye?source=all&searchtype=8&results=50
+Result: anadh muraaree mahaa(n) purakh kaliaanaa kul kaval rasaalaa|
+Acronym Match: false | Score Match: false
+
+Strategy 4 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir ghar baiso?source=all&searchtype=4&results=50
+Result: har bhagataa no dhei ana(n)dh thir gharee bahaalian ||
+Acronym Match: false | Score Match: true
+
+Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=8&results=50
+Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
+Acronym Match: false | Score Match: false
+
+Strategy 0 | Query: ad | URL: https://api.banidb.com/v2/search/ad?source=all&results=50
+Result: aupaja(n)p dharasan keejai taa kaa ||1||
+Acronym Match: true | Score Match: false
+
+Strategy 4 | Query: anand bhaya meri maaye | URL: https://api.banidb.com/v2/search/anand bhaya meri maaye?source=all&searchtype=4&results=50
+Result: aape bakhase mel milaae ||
+Acronym Match: false | Score Match: false
+
+Strategy 8 | Query: anand bhaya meri maaye | URL: https://api.banidb.com/v2/search/anand bhaya meri maaye?source=all&searchtype=8&results=50
+Result: anadh muraaree mahaa(n) purakh kaliaanaa kul kaval rasaalaa|
+Acronym Match: false | Score Match: false
+
+Strategy 4 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir ghar baiso?source=all&searchtype=4&results=50
+Result: har bhagataa no dhei ana(n)dh thir gharee bahaalian ||
+Acronym Match: false | Score Match: true
+
+Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=8&results=50
+Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
+Acronym Match: false | Score Match: false
+
+Strategy 0 | Query: ad | URL: https://api.banidb.com/v2/search/ad?source=all&results=50
+Result: aupaja(n)p dharasan keejai taa kaa ||1||
+Acronym Match: true | Score Match: false
+
+Strategy 4 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir ghar baiso?source=all&searchtype=4&results=50
+Result: har bhagataa no dhei ana(n)dh thir gharee bahaalian ||
+Acronym Match: false | Score Match: 
+
+Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=8&results=50
+Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
+Acronym Match: false | Score Match: false
+
+Strategy 0 | Query: ad | URL: https://api.banidb.com/v2/search/ad?source=all&results=50
+Result: aupaja(n)p dharasan keejai taa kaa ||1||
+Acronym Match: true | Score Match: false
+
+Strategy 4 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir ghar baiso?source=all&searchtype=4&results=50
+Result: har bhagataa no dhei ana(n)dh thir gharee bahaalian ||
+Acronym Match: false | Score Match: true
+
+Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=8&results=50
+Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
+Acronym Match: false | Score Match: false
+
+Strategy 0 | Query: ad | URL: https://api.banidb.com/v2/search/ad?source=all&results=50
+Result: aupaja(n)p dharasan keejai taa kaa ||1||
+Acronym Match: true | Score Match: false
+
+Strategy 4 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir ghar baiso?source=all&searchtype=4&results=50
+Result: har bhagataa no dhei ana(n)dh thir gharee bahaalian ||
+Acronym Match: false | Score Match: true
+
+Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=8&results=50
+Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
+Acronym Match: false | Score Match: false
+

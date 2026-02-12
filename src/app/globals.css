@@ -1,26 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Mukta:wght@400;700&family=Noto+Serif+Gurmukhi:wght@400;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #fffafa;
+  /* Very light pinkish-white */
+  --foreground: #2d0a0a;
+  /* Deep dark maroon for text */
+  --accent: #d42c5c;
+  /* Soft rose/crimson for active markers */
+  --petal: #fce4ec;
+  /* Light pink for background patterns */
+  --center: #fff9c4;
+  /* Soft yellow for center glow */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.gurbani-text {
+  font-family: 'Noto Serif Gurmukhi', 'Mukta', sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+/* Background Lotus Pattern */
+.lotus-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at center, var(--center) 0%, transparent 40%),
+    var(--background);
+}
+
+.lotus-pattern {
+  width: 120vh;
+  height: 120vh;
+  opacity: 0.15;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 0 C60 20 80 40 100 50 C80 60 60 80 50 100 C40 80 20 60 0 50 C20 40 40 20 50 0 Z' fill='%23d81b60' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: blur(2px);
+  animation: slow-rotate 180s linear infinite;
+}
+
+@keyframes slow-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide scrollbars globally but keep functionality */
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.line-glow-active {
+  text-shadow: 0 0 30px rgba(212, 44, 92, 0.2);
+}
+
+.btn-start {
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 99px;
+  box-shadow: 0 4px 15px rgba(212, 44, 92, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-start:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(212, 44, 92, 0.4);
 }

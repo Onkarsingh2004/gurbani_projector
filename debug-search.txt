@@ -1,0 +1,73 @@
+
+--- NEW REQUEST ---
+Query: "dhan dhan ramdas gur"
+Strategy: Type=4, Q="dhan dhan ramdas gur"
+API Response: 6 verses
+Best Candidate: "dha(n)n dha(n)n raamadhaas gur..." Score: 375
+Confidence: 45 (Threshold: 45)
+Passed Threshold!
+
+--- NEW REQUEST ---
+Query: "tati vao na lagi"
+Strategy: Type=4, Q="tati vao na lagi"
+API Response: 5 verses
+Best Candidate: "tatee vaau na lagiee jin man v..." Score: 375
+Confidence: 45 (Threshold: 45)
+Passed Threshold!
+
+--- NEW REQUEST ---
+Query: "jo mange thakur apne te"
+Strategy: Type=4, Q="jo mange thakur apne te"
+API Response: 1 verses
+Best Candidate: "jo maageh Thaakur apune te soi..." Score: 300
+Confidence: 36 (Threshold: 45)
+Failed Threshold.
+Strategy: Type=8, Q="jo mange thakur apne te"
+API Response: 20 verses
+Best Candidate: "jo maageh Thaakur apune te soi..." Score: 300
+Confidence: 36 (Threshold: 45)
+Failed Threshold.
+Strategy: Type=1, Q="jmtat"
+API Response: 0 verses
+Strategy: Type=0, Q="jmtat"
+API Response: 0 verses
+
+--- NEW REQUEST ---
+Query: "santa ke karaj aap khaloya"
+Strategy: Type=4, Q="santa ke karaj aap khaloya"
+API Response: 9 verses
+Best Candidate: "sa(n)taa ke kaaraj aap khaloia..." Score: 400
+Confidence: 48 (Threshold: 45)
+Passed Threshold!
+
+--- NEW REQUEST ---
+Query: "dhan dhan ramdas gur"
+Strategy: Type=4, Q="dhan dhan ramdas gur"
+API Response: 6 verses
+Best Candidate: "dha(n)n dha(n)n raamadhaas gur..." Score: 375
+Confidence: 70 (Threshold: 45)
+Passed Threshold!
+
+--- NEW REQUEST ---
+Query: "tati vao na lagi"
+Strategy: Type=4, Q="tati vao na lagi"
+API Response: 5 verses
+Best Candidate: "tatee vaau na lagiee jin man v..." Score: 375
+Confidence: 70 (Threshold: 45)
+Passed Threshold!
+
+--- NEW REQUEST ---
+Query: "jo mange thakur apne te"
+Strategy: Type=4, Q="jo mange thakur apne te"
+API Response: 1 verses
+Best Candidate: "jo maageh Thaakur apune te soi..." Score: 300
+Confidence: 70 (Threshold: 45)
+Passed Threshold!
+
+--- NEW REQUEST ---
+Query: "santa ke karaj aap khaloya"
+Strategy: Type=4, Q="santa ke karaj aap khaloya"
+API Response: 9 verses
+Best Candidate: "sa(n)taa ke kaaraj aap khaloia..." Score: 400
+Confidence: 70 (Threshold: 45)
+Passed Threshold!
