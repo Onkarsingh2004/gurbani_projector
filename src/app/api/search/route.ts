@@ -40,23 +40,23 @@ function stripGurmukhiMatras(text: string) {
 // 🗺️ MANUAL BANI MAP (Fallback/Priority for common Nitnem)
 // IDs verified against GurbaniDB v2 API
 const MANUAL_BANI_MAP: { [key: string]: number } = {
-    // English Keys
-    "japji": 2, "jap ji": 2, "japji sahib": 2,
-    "jaap": 4, "jaap sahib": 4,
-    "tav prasad": 6, "savaiye": 6,
-    "chaupai": 9, "choupai": 9, "chaupai sahib": 9,
-    "anand": 10, "anand sahib": 10,
-    "rehras": 21, "rehiras": 21, "rahras": 21, "sodar": 21, "rehras sahib": 21,
-    "sohila": 23, "kirtan sohila": 23, "sohila sahib": 23,
-    "ardaas": 24, "ardas": 24, "ardaas sahib": 24,
-    "sukhmani": 31, "sukhmani sahib": 31,
-    "asa di var": 11, "asa di vaar": 11,
-    "shabad hazare": 3, "shabad hazaare": 3,
-    "salok mahala 9": 30, "salok mahala nou": 30, "salok mahala nau": 30, "salok mahala nava": 30,
-    "barah maha": 136, "baarah maahaa": 136,
-    "dukh bhanjani": 178,
-    "laavan": 773, "lavan": 773,
-    "aarti": 13, "arti": 13,
+    // // English Keys
+    // "japji": 2, "jap ji": 2, "japji sahib": 2,
+    // "jaap": 4, "jaap sahib": 4,
+    // "tav prasad": 6, "savaiye": 6,
+    // "chaupai": 9, "choupai": 9, "chaupai sahib": 9,
+    // "anand": 10, "anand sahib": 10,
+    // "rehras": 21, "rehiras": 21, "rahras": 21, "sodar": 21, "rehras sahib": 21,
+    // "sohila": 23, "kirtan sohila": 23, "sohila sahib": 23,
+    // "ardaas": 24, "ardas": 24, "ardaas sahib": 24,
+    // "sukhmani": 31, "sukhmani sahib": 31,
+    // "asa di var": 11, "asa di vaar": 11,
+    // "shabad hazare": 3, "shabad hazaare": 3,
+    // "salok mahala 9": 30, "salok mahala nou": 30, "salok mahala nau": 30, "salok mahala nava": 30,
+    // "barah maha": 136, "baarah maahaa": 136,
+    // "dukh bhanjani": 178,
+    // "laavan": 773, "lavan": 773,
+    // "aarti": 13, "arti": 13,
 
     // Gurmukhi Keys (New)
     "ਜਪੁ": 2, "ਜਪ": 2, "ਜਪੁਜੀ": 2, "ਜਪੁ ਜੀ ਸਾਹਿਬ": 2,
