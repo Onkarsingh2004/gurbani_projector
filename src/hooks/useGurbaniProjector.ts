@@ -68,6 +68,8 @@ export const useGurbaniProjector = () => {
                     // Don't set error if it's just a partial word being accumulated
                     if (spokenText.split(" ").length > 2) {
                         setErrorMessage("No Match Found");
+                        // 🛑 Erase the failed line so we can detect the next line freshly
+                        previousTranscriptRef.current = fullTranscriptAtTime;
                     }
                 }
             }
