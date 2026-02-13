@@ -142,17 +142,6 @@ Strategy 4 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir
 Result: har bhagataa no dhei ana(n)dh thir gharee bahaalian ||
 Acronym Match: false | Score Match: 
 
-Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=8&results=50
-Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
-Acronym Match: false | Score Match: false
-
-Strategy 0 | Query: ad | URL: https://api.banidb.com/v2/search/ad?source=all&results=50
-Result: aupaja(n)p dharasan keejai taa kaa ||1||
-Acronym Match: true | Score Match: false
-
-Strategy 4 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir ghar baiso?source=all&searchtype=4&results=50
-Result: har bhagataa no dhei ana(n)dh thir gharee bahaalian ||
-Acronym Match: false | Score Match: true
 
 Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=8&results=50
 Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
@@ -170,3 +159,403 @@ Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=a
 Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
 Acronym Match: false | Score Match: false
 
+Strategy 0 | Query: ad | URL: https://api.banidb.com/v2/search/ad?source=all&results=50
+Result: aupaja(n)p dharasan keejai taa kaa ||1||
+Acronym Match: true | Score Match: false
+
+Strategy 4 | Query: thir ghar baiso | URL: https://api.banidb.com/v2/search/thir ghar baiso?source=all&searchtype=4&results=50
+Result: har bhagataa no dhei ana(n)dh thir gharee bahaalian ||
+Acronym Match: false | Score Match: true
+
+Strategy 8 | Query: w w w | URL: https://api.banidb.com/v2/search/w w w?source=all&searchtype=8&results=50
+Result: sakr so judh ke het mano dhar chhaadd sapachh udde giraraiee ||175||
+Acronym Match: false | Score Match: false
+
+[2026-02-13T01:14:56.961Z] 🔍 [Backend] Received Query: waheguru
+[2026-02-13T01:14:56.962Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T01:17:45.285Z] 🔍 [Backend] Received Query: ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ
+[2026-02-13T01:17:45.287Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:17:45.288Z] ✂️ [Backend] Stripped Query (Matras Removed): ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ
+[2026-02-13T01:17:52.512Z] 🔍 [Backend] Received Query: ਨਾਨਕ ਮਿਟੈ ਭਾਰ
+[2026-02-13T01:17:52.513Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:17:52.514Z] ✂️ [Backend] Stripped Query (Matras Removed): ਨਾਨਕ ਮਿਟੈ ਭਾਰ
+[2026-02-13T01:17:54.356Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:17:56.792Z] 🔍 [Backend] Received Query: ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ ਨਾਨਕ ਮਿਟ ਉਭਾਰ ਤਾਰਾ ਬੁਝੈ
+[2026-02-13T01:17:56.793Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:17:56.793Z] ✂️ [Backend] Stripped Query (Matras Removed): ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ ਨਾਨਕ ਮਿਟ ਉਭਾਰ ਤਾਰਾ ਬੁਝੈ
+[2026-02-13T01:17:58.807Z] 🔍 [Backend] Received Query: ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ ਨਾਨਕ ਮਿਟ ਉਭਾਰ ਤਾਰਾ ਬੁਝੈ ਨਾ
+[2026-02-13T01:17:58.808Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:17:58.809Z] ✂️ [Backend] Stripped Query (Matras Removed): ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ ਨਾਨਕ ਮਿਟ ਉਭਾਰ ਤਾਰਾ ਬੁਝੈ ਨਾ
+[2026-02-13T01:18:10.674Z] 🔍 [Backend] Received Query: ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ ਨਾਨਕ ਮਿਟੈ ਭਾਰ ਨਾਨਕ ਮਿਟੈ ਉਪਾ
+[2026-02-13T01:18:10.676Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:18:10.677Z] ✂️ [Backend] Stripped Query (Matras Removed): ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ ਨਾਨਕ ਮਿਟੈ ਭਾਰ ਨਾਨਕ ਮਿਟੈ ਉਪਾ
+[2026-02-13T01:18:24.413Z] 🔍 [Backend] Received Query: ਮੈਲੇ ਕੀ ਟੇਕ
+[2026-02-13T01:18:24.414Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:18:24.414Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮੈਲੇ ਕੀ ਟੇਕ
+[2026-02-13T01:18:26.204Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:18:35.694Z] 🔍 [Backend] Received Query: ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ ਨਾਨਕ ਮਿਟੈ ਭਾਰ ਨਾਨਕ ਮਿਟੈ ਉਪਾ ਮੈ ਤੇਰੇ ਕੀ ਟੇਕ ਤੇਰਾ ਨਾਮੁ ਖੁੰਦਕਾਰਾ
+[2026-02-13T01:18:35.695Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:18:35.696Z] ✂️ [Backend] Stripped Query (Matras Removed): ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ ਨਾਨਕ ਮਿਟੈ ਭਾਰ ਨਾਨਕ ਮਿਟੈ ਉਪਾ ਮੈ ਤੇਰੇ ਕੀ ਟੇਕ ਤੇਰਾ ਨਾਮੁ ਖੁੰਦਕਾਰਾ
+[2026-02-13T01:18:39.304Z] 🔍 [Backend] Received Query: ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ ਨਾਨਕ ਮਿਟੈ ਭਾਰ ਨਾਨਕ ਮਿਟੈ ਉਪਾ ਮੈ ਤੇਰੇ ਕੀ ਟੇਕ ਤੇਰਾ ਨਾਮੁ ਖੁੰਦਕਾਰਾ ਮੈ ਗਰੀਬ
+[2026-02-13T01:18:39.305Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:18:39.306Z] ✂️ [Backend] Stripped Query (Matras Removed): ਕਰ ਤੁਝੈ ਨ ਵਿਆਪਈ ਨਾਨਕ ਮਿਟੈ ਭਾਰ ਨਾਨਕ ਮਿਟੈ ਉਪਾ ਮੈ ਤੇਰੇ ਕੀ ਟੇਕ ਤੇਰਾ ਨਾਮੁ ਖੁੰਦਕਾਰਾ ਮੈ ਗਰੀਬ
+[2026-02-13T01:18:53.840Z] 🔍 [Backend] Received Query: ਤੇਰਾ ਨਾਮ ਹੈ
+[2026-02-13T01:18:53.841Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:18:53.842Z] ✂️ [Backend] Stripped Query (Matras Removed): ਤੇਰਾ ਨਾਮ ਹੈ
+[2026-02-13T01:18:55.751Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:19:05.958Z] 🔍 [Backend] Received Query: ਹਮ ਭਲੇ ਗੁਣਾ ਅੰਮ੍ਰਿਤ ਛਾਡ ਬਿਖੈ ਬਿਖ ਖਾਹਿ
+[2026-02-13T01:19:05.959Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:19:05.960Z] ✂️ [Backend] Stripped Query (Matras Removed): ਹਮ ਭਲੇ ਗੁਣਾ ਅੰਮ੍ਰਿਤ ਛਾਡ ਬਿਖੈ ਬਿਖ ਖਾਹਿ
+[2026-02-13T01:19:12.073Z] 🔍 [Backend] Received Query: ਮਾਇਆ ਮੋਹ ਭਰਮ ਭੈ ਭੂਖੇ ਸੁਤ ਦਾਰਾ ਸਿਉ ਪ੍ਰੀਤ ਲਗਾ
+[2026-02-13T01:19:12.074Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:19:12.075Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਾਇਆ ਮੋਹ ਭਰਮ ਭੈ ਭੂਖੇ ਸੁਤ ਦਾਰਾ ਸਿਉ ਪ੍ਰੀਤ ਲਗਾ
+[2026-02-13T01:19:19.635Z] 🔍 [Backend] Received Query: ਇਕ ਉਤਮ ਪੰਥ ਸੁਣਿਓ ਗੁਰ ਸੰਗਤ ਤਹ ਮਿਲੰਤ ਜਮ ਤ੍ਰਾਸ ਮਿਟਾਈ
+[2026-02-13T01:19:19.637Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:19:19.638Z] ✂️ [Backend] Stripped Query (Matras Removed): ਇਕ ਉਤਮ ਪੰਥ ਸੁਣਿਓ ਗੁਰ ਸੰਗਤ ਤਹ ਮਿਲੰਤ ਜਮ ਤ੍ਰਾਸ ਮਿਟਾਈ
+[2026-02-13T01:19:26.743Z] 🔍 [Backend] Received Query: ਤੇਰਾ ਨਾਮ ਹੈ ਹਮ ਭਲੇ ਗੁਣਾ ਅੰਮ੍ਰਿਤ ਛਾਡ ਬਿਖੈ ਬਿਖ ਖਾਹਿ ਮਾਇਆ ਮੋਹ ਭਰਮ ਭੈ ਭੂਖੇ ਸੁਤ ਦਾਰਾ ਸਿਉ ਪ੍ਰੀਤ ਲਗਾ ਇਕ ਉਤਮ ਪੰਥ ਸੁਣਿਓ ਗੁਰ ਸੰਗਤ ਤਿਹ ਮਿਲੰਤ ਜਮ ਤ੍ਰਾਸ ਮਿਟਾਈ ਇਕ ਅਰਦਾਸ ਭਾਤ ਕੀਰਤ ਕੀ
+[2026-02-13T01:19:26.745Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:19:26.745Z] ✂️ [Backend] Stripped Query (Matras Removed): ਤੇਰਾ ਨਾਮ ਹੈ ਹਮ ਭਲੇ ਗੁਣਾ ਅੰਮ੍ਰਿਤ ਛਾਡ ਬਿਖੈ ਬਿਖ ਖਾਹਿ ਮਾਇਆ ਮੋਹ ਭਰਮ ਭੈ ਭੂਖੇ ਸੁਤ ਦਾਰਾ ਸਿਉ ਪ੍ਰੀਤ ਲਗਾ ਇਕ ਉਤਮ ਪੰਥ ਸੁਣਿਓ ਗੁਰ ਸੰਗਤ ਤਿਹ ਮਿਲੰਤ ਜਮ ਤ੍ਰਾਸ ਮਿਟਾਈ ਇਕ ਅਰਦਾਸ ਭਾਤ ਕੀਰਤ ਕੀ
+[2026-02-13T01:19:29.975Z] 🔍 [Backend] Received Query: ਤੇਰਾ ਨਾਮ ਹੈ ਹਮ ਭਲੇ ਗੁਣਾ ਅੰਮ੍ਰਿਤ ਛਾਡ ਬਿਖੈ ਬਿਖ ਖਾਹਿ ਮਾਇਆ ਮੋਹ ਭਰਮ ਭੈ ਭੂਖੇ ਸੁਤ ਦਾਰਾ ਸਿਉ ਪ੍ਰੀਤ ਲਗਾ ਇਕ ਉਤਮ ਪੰਥ ਸੁਣਿਓ ਗੁਰ ਸੰਗਤ ਤਿਹ ਮਿਲੰਤ ਜਮ ਤ੍ਰਾਸ ਮਿਟਾਈ ਇਕ ਅਰਦਾਸ ਭਗਤੀ ਗੁਰ ਰਾਮਦਾਸ
+[2026-02-13T01:19:29.976Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:19:29.977Z] ✂️ [Backend] Stripped Query (Matras Removed): ਤੇਰਾ ਨਾਮ ਹੈ ਹਮ ਭਲੇ ਗੁਣਾ ਅੰਮ੍ਰਿਤ ਛਾਡ ਬਿਖੈ ਬਿਖ ਖਾਹਿ ਮਾਇਆ ਮੋਹ ਭਰਮ ਭੈ ਭੂਖੇ ਸੁਤ ਦਾਰਾ ਸਿਉ ਪ੍ਰੀਤ ਲਗਾ ਇਕ ਉਤਮ ਪੰਥ ਸੁਣਿਓ ਗੁਰ ਸੰਗਤ ਤਿਹ ਮਿਲੰਤ ਜਮ ਤ੍ਰਾਸ ਮਿਟਾਈ ਇਕ ਅਰਦਾਸ ਭਗਤੀ ਗੁਰ ਰਾਮਦਾਸ
+[2026-02-13T01:19:37.836Z] 🔍 [Backend] Received Query: ਤੇਰਾ ਨਾਮ ਹੈ ਹਮ ਭਲੇ ਗੁਣਾ ਅੰਮ੍ਰਿਤ ਛਾਡ ਬਿਖੈ ਬਿਖ ਖਾਹਿ ਮਾਇਆ ਮੋਹ ਭਰਮ ਭੈ ਭੂਖੇ ਸੁਤ ਦਾਰਾ ਸਿਉ ਪ੍ਰੀਤ ਲਗਾ ਇਕ ਉਤਮ ਪੰਥ ਸੁਣਿਓ ਗੁਰ ਸੰਗਤ ਤਿਹ ਮਿਲੰਤ ਜਮ ਤ੍ਰਾਸ ਮਿਟਾਈ ਇਕ ਅਰਦਾਸ ਭਾਤ ਕੀਰਤ ਕੀ ਗੁਰ ਰਾਮਦਾਸ ਰਾਖਹੁ ਸਰਣਾਈ
+[2026-02-13T01:19:37.838Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:19:37.839Z] ✂️ [Backend] Stripped Query (Matras Removed): ਤੇਰਾ ਨਾਮ ਹੈ ਹਮ ਭਲੇ ਗੁਣਾ ਅੰਮ੍ਰਿਤ ਛਾਡ ਬਿਖੈ ਬਿਖ ਖਾਹਿ ਮਾਇਆ ਮੋਹ ਭਰਮ ਭੈ ਭੂਖੇ ਸੁਤ ਦਾਰਾ ਸਿਉ ਪ੍ਰੀਤ ਲਗਾ ਇਕ ਉਤਮ ਪੰਥ ਸੁਣਿਓ ਗੁਰ ਸੰਗਤ ਤਿਹ ਮਿਲੰਤ ਜਮ ਤ੍ਰਾਸ ਮਿਟਾਈ ਇਕ ਅਰਦਾਸ ਭਾਤ ਕੀਰਤ ਕੀ ਗੁਰ ਰਾਮਦਾਸ ਰਾਖਹੁ ਸਰਣਾਈ
+[2026-02-13T01:19:41.965Z] 🔍 [Backend] Received Query: ਇ ਓਕਾਰ
+[2026-02-13T01:19:41.966Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:19:41.967Z] ✂️ [Backend] Stripped Query (Matras Removed): ਇ ਓਕਾਰ
+[2026-02-13T01:19:44.645Z] 🔍 [Backend] Received Query: ਇ ਓਕਾਰ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ
+[2026-02-13T01:19:44.647Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:19:44.648Z] ✂️ [Backend] Stripped Query (Matras Removed): ਇ ਓਕਾਰ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ
+[2026-02-13T01:19:52.365Z] 🔍 [Backend] Received Query: ਆਸਾ ਮਹਲਾ ਚੌਥਾ
+[2026-02-13T01:19:52.366Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:19:52.368Z] ✂️ [Backend] Stripped Query (Matras Removed): ਆਸਾ ਮਹਲਾ ਚੌਥਾ
+[2026-02-13T01:19:55.548Z] 🔍 [Backend] Received Query: ਆਸਾ ਮਹਲਾ ਚੌਥਾ ਸੰਤ
+[2026-02-13T01:19:55.549Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:19:55.550Z] ✂️ [Backend] Stripped Query (Matras Removed): ਆਸਾ ਮਹਲਾ ਚੌਥਾ ਸੰਤ
+[2026-02-13T01:20:15.138Z] 🔍 [Backend] Received Query: ਹਰਿ ਅਨੰਦ ਭਿੰਨੇ ਕੋਇ ਨਾ ਮਨ ਪ੍ਰੀਤ ਨ ਰਾਮ ਰਾਜੇ ਮਨ ਰਾਮ ਕਸਵਲ
+[2026-02-13T01:20:15.139Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:20:15.140Z] ✂️ [Backend] Stripped Query (Matras Removed): ਹਰਿ ਅਨੰਦ ਭਿੰਨੇ ਕੋਇ ਨਾ ਮਨ ਪ੍ਰੀਤ ਨ ਰਾਮ ਰਾਜੇ ਮਨ ਰਾਮ ਕਸਵਲ
+[2026-02-13T01:25:00.266Z] 🔍 [Backend] Received Query: ਜਹ ਮਥੁਰਾ
+[2026-02-13T01:25:00.268Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:25:00.269Z] ✂️ [Backend] Stripped Query (Matras Removed): ਜਹ ਮਥੁਰਾ
+[2026-02-13T01:25:02.761Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:25:04.152Z] 🔍 [Backend] Received Query: ਜਹ ਮਥੁਰਾ ਜਗ ਤਾਰਨ ਕਉ ਅਵਤਾਰ ਮਨਾਇਓ
+[2026-02-13T01:25:04.153Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:25:04.153Z] ✂️ [Backend] Stripped Query (Matras Removed): ਜਹ ਮਥੁਰਾ ਜਗ ਤਾਰਨ ਕਉ ਅਵਤਾਰ ਮਨਾਇਓ
+[2026-02-13T01:25:09.271Z] 🔍 [Backend] Received Query: ਜਪਿਓ ਜਿਨ ਅਰਜਨ ਦੇਵ ਗੁਰੂ
+[2026-02-13T01:25:09.272Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:25:09.273Z] ✂️ [Backend] Stripped Query (Matras Removed): ਜਪਿਓ ਜਿਨ ਅਰਜਨ ਦੇਵ ਗੁਰੂ
+[2026-02-13T01:25:15.495Z] 🔍 [Backend] Received Query: ਫਿਰ ਸੰਕਟ ਜੋਨ ਗਰਭ ਨ ਆਇਓ
+[2026-02-13T01:25:15.496Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:25:15.496Z] ✂️ [Backend] Stripped Query (Matras Removed): ਫਿਰ ਸੰਕਟ ਜੋਨ ਗਰਭ ਨ ਆਇਓ
+[2026-02-13T01:25:20.980Z] 🔍 [Backend] Received Query: ਅਗਾਹ ਕੋ ਤ੍ਰਾਗ
+[2026-02-13T01:25:20.981Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:25:20.982Z] ✂️ [Backend] Stripped Query (Matras Removed): ਅਗਾਹ ਕੋ ਤ੍ਰਾਗ
+[2026-02-13T01:25:23.320Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:25:26.151Z] 🔍 [Backend] Received Query: ਪਿਛਾ ਫੇਰ ਨ ਮਹੁਜੜਾ
+[2026-02-13T01:25:26.152Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:25:26.154Z] ✂️ [Backend] Stripped Query (Matras Removed): ਪਿਛਾ ਫੇਰ ਨ ਮਹੁਜੜਾ
+[2026-02-13T01:25:29.152Z] 🔍 [Backend] Received Query: ਪਿਛਾ ਫੇਰ ਨ ਮਹੁਜੜਾ ਅਵੇਹਾ ਵਾਰ
+[2026-02-13T01:25:29.154Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:25:29.155Z] ✂️ [Backend] Stripped Query (Matras Removed): ਪਿਛਾ ਫੇਰ ਨ ਮਹੁਜੜਾ ਅਵੇਹਾ ਵਾਰ
+[2026-02-13T01:25:32.674Z] 🔍 [Backend] Received Query: ਬਹਣ ਨ ਹੋਵੀ ਜਨਮੜਾ
+[2026-02-13T01:25:32.675Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:25:32.676Z] ✂️ [Backend] Stripped Query (Matras Removed): ਬਹਣ ਨ ਹੋਵੀ ਜਨਮੜਾ
+[2026-02-13T01:25:33.828Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 45)
+[2026-02-13T01:25:56.598Z] 🔍 [Backend] Received Query: ਸਜਣ ਮੈਡਾ ਚਾਈਆ ਹਕ ਕਹੀ ਦਾ ਮਿਤ ਆਪੇ ਜਾਨਣ ਆਪਣਾ ਕਹੀ ਨ ਠਾਹਿ ਚਿਤ ਗੁਜੜਲ ਦੁਮ ਲਾਲ ਮਥਈ ਪਰਗਟ ਥਿਆ ਸੋਈ ਸੁਹਾਵਾ ਥਾਨ ਜਿਥੈ ਪਰੀਏ ਨਾਨਕ ਜੀ ਤੂ ਬੁਠਿਆ
+[2026-02-13T01:25:56.599Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:25:56.600Z] ✂️ [Backend] Stripped Query (Matras Removed): ਸਜਣ ਮੈਡਾ ਚਾਈਆ ਹਕ ਕਹੀ ਦਾ ਮਿਤ ਆਪੇ ਜਾਨਣ ਆਪਣਾ ਕਹੀ ਨ ਠਾਹਿ ਚਿਤ ਗੁਜੜਲ ਦੁਮ ਲਾਲ ਮਥਈ ਪਰਗਟ ਥਿਆ ਸੋਈ ਸੁਹਾਵਾ ਥਾਨ ਜਿਥੈ ਪਰੀਏ ਨਾਨਕ ਜੀ ਤੂ ਬੁਠਿਆ
+[2026-02-13T01:26:23.199Z] 🔍 [Backend] Received Query: ਸੇਵ ਕਰੰਦਾ ਇਹ ਵੈਰੀ ਮਿਤਰ ਸਭ ਕੀਤਿਆ ਨਹ ਮੰਗਹਿ ਮੰਦਾ
+[2026-02-13T01:26:23.200Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:26:23.202Z] ✂️ [Backend] Stripped Query (Matras Removed): ਸੇਵ ਕਰੰਦਾ ਇਹ ਵੈਰੀ ਮਿਤਰ ਸਭ ਕੀਤਿਆ ਨਹ ਮੰਗਹਿ ਮੰਦਾ
+[2026-02-13T01:26:28.888Z] 🔍 [Backend] Received Query: ਲੇਖਾ ਕੋਇ ਨ ਪੁਛਈ ਜਾ ਹਰਿ ਬਖਸੰਦਾ
+[2026-02-13T01:26:28.889Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:26:28.889Z] ✂️ [Backend] Stripped Query (Matras Removed): ਲੇਖਾ ਕੋਇ ਨ ਪੁਛਈ ਜਾ ਹਰਿ ਬਖਸੰਦਾ
+[2026-02-13T01:26:30.606Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 45)
+[2026-02-13T01:26:32.020Z] 🔍 [Backend] Received Query: ਲੇਖਾ ਕੋਇ ਨ ਪੁਛਈ ਜਾ ਹਰਿ ਬਖਸੰਦਾ ਅਨੰਦ ਭਇਆ ਸੁਖੁ ਪਾਇਆ
+[2026-02-13T01:26:32.025Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:26:32.027Z] ✂️ [Backend] Stripped Query (Matras Removed): ਲੇਖਾ ਕੋਇ ਨ ਪੁਛਈ ਜਾ ਹਰਿ ਬਖਸੰਦਾ ਅਨੰਦ ਭਇਆ ਸੁਖੁ ਪਾਇਆ
+[2026-02-13T01:26:34.621Z] 🔍 [Backend] Received Query: ਅਨੰਦ ਭਇਆ ਸੁਖੁ ਪਾਇਆ ਮਿਲਿ ਗੁਰ ਗੋਬਿੰਦ
+[2026-02-13T01:26:34.622Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:26:34.623Z] ✂️ [Backend] Stripped Query (Matras Removed): ਅਨੰਦ ਭਇਆ ਸੁਖੁ ਪਾਇਆ ਮਿਲਿ ਗੁਰ ਗੋਬਿੰਦ
+[2026-02-13T01:26:41.116Z] 🔍 [Backend] Received Query: ਸੇਵ ਕਰੰਦਾ ਇਹ ਵੈਰੀ ਮਿਤਰ ਸਭ ਕੀਤਿਆ ਨਹ ਮੰਗਹਿ ਮੰਦਾ ਲੇਖਾ ਕੋਇ ਨ ਪੁਛਈ ਜਾ ਹਰਿ ਬਖਸੰਦਾ ਅਨੰਦੁ ਭਇਆ ਸੁਖੁ ਪਾਇਆ ਮਿਲਿ ਗੁਰ ਗੋਬਿੰਦ ਸਭੇ ਕਾਜ ਸਵਾਰਿਆ
+[2026-02-13T01:26:41.117Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:26:41.118Z] ✂️ [Backend] Stripped Query (Matras Removed): ਸੇਵ ਕਰੰਦਾ ਇਹ ਵੈਰੀ ਮਿਤਰ ਸਭ ਕੀਤਿਆ ਨਹ ਮੰਗਹਿ ਮੰਦਾ ਲੇਖਾ ਕੋਇ ਨ ਪੁਛਈ ਜਾ ਹਰਿ ਬਖਸੰਦਾ ਅਨੰਦੁ ਭਇਆ ਸੁਖੁ ਪਾਇਆ ਮਿਲਿ ਗੁਰ ਗੋਬਿੰਦ ਸਭੇ ਕਾਜ ਸਵਾਰਿਆ
+[2026-02-13T01:26:47.199Z] 🔍 [Backend] Received Query: ਜਾ ਤੁਧੁ ਭਾਵੰਦਾ
+[2026-02-13T01:26:47.200Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:26:47.201Z] ✂️ [Backend] Stripped Query (Matras Removed): ਜਾ ਤੁਧੁ ਭਾਵੰਦਾ
+[2026-02-13T01:26:51.527Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:26:59.201Z] 🔍 [Backend] Received Query: ਅਨੰਦੁ ਭਇਆ ਸੁਖੁ ਪਾਇਆ ਮਿਲਿ ਗੁਰ ਗੋਵਿੰਦਾ ਸਭੇ ਕਾਜ ਸਵਾਰਿਆ
+[2026-02-13T01:26:59.202Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:26:59.203Z] ✂️ [Backend] Stripped Query (Matras Removed): ਅਨੰਦੁ ਭਇਆ ਸੁਖੁ ਪਾਇਆ ਮਿਲਿ ਗੁਰ ਗੋਵਿੰਦਾ ਸਭੇ ਕਾਜ ਸਵਾਰਿਆ
+[2026-02-13T01:27:26.201Z] 🔍 [Backend] Received Query: ਜਾ ਤੁਧੁ ਭਾਵੰਦਾ ਸੁ ਕਹੁ ਕਲ ਗੁਰ ਸੇਵੀਐ ਅਹਨਸ ਸਹਜ ਸੁਭਾ ਦਰਸਨ ਪਰਸਿਐ ਗੁਰੂ ਕੈ ਜਨਮ ਮਰਨ ਦੁਖ ਜਾਇ ਹੋਵੈ ਸਿਫਤ ਖਸ
+[2026-02-13T01:27:26.202Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:27:26.203Z] ✂️ [Backend] Stripped Query (Matras Removed): ਜਾ ਤੁਧੁ ਭਾਵੰਦਾ ਸੁ ਕਹੁ ਕਲ ਗੁਰ ਸੇਵੀਐ ਅਹਨਸ ਸਹਜ ਸੁਭਾ ਦਰਸਨ ਪਰਸਿਐ ਗੁਰੂ ਕੈ ਜਨਮ ਮਰਨ ਦੁਖ ਜਾਇ ਹੋਵੈ ਸਿਫਤ ਖਸ
+[2026-02-13T01:30:50.566Z] 🔍 [Backend] Received Query: ਸੰਤੋ
+[2026-02-13T01:30:50.568Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:30:50.570Z] ✂️ [Backend] Stripped Query (Matras Removed): ਸੰਤੋ
+[2026-02-13T01:30:59.450Z] 🔍 [Backend] Received Query: ਸੰਤੋ ਰਾਮਦਾਸ ਸਰੋਵਰ ਨੀਕਾ
+[2026-02-13T01:30:59.452Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:30:59.453Z] ✂️ [Backend] Stripped Query (Matras Removed): ਸੰਤੋ ਰਾਮਦਾਸ ਸਰੋਵਰ ਨੀਕਾ
+[2026-02-13T01:31:01.641Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 45)
+[2026-02-13T01:39:13.552Z] 🔍 [Backend] Received Query: ਮੇਰੀ ਪ੍ਰੀਤ
+[2026-02-13T01:39:13.555Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:39:13.556Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮੇਰੀ ਪ੍ਰੀਤ
+[2026-02-13T01:39:13.653Z] 🏠 [Backend] No Local Match. Falling back to API...
+[2026-02-13T01:39:14.673Z] 🔍 [Backend] Received Query: ਮੇਰੀ ਪ੍ਰੀਤ ਮੇਰੀ
+[2026-02-13T01:39:14.675Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:39:14.676Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮੇਰੀ ਪ੍ਰੀਤ ਮੇਰੀ
+[2026-02-13T01:39:14.682Z] 🏠 [Backend] No Local Match. Falling back to API...
+[2026-02-13T01:39:16.896Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:39:17.551Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:39:25.890Z] 🔍 [Backend] Received Query: ਪ੍ਰੀਤ ਪਰ ਮੇਰੀ ਪੂਜ
+[2026-02-13T01:39:25.892Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:39:25.893Z] ✂️ [Backend] Stripped Query (Matras Removed): ਪ੍ਰੀਤ ਪਰ ਮੇਰੀ ਪੂਜ
+[2026-02-13T01:39:25.899Z] 🏠 [Backend] No Local Match. Falling back to API...
+[2026-02-13T01:39:27.792Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 45)
+[2026-02-13T01:39:33.327Z] 🔍 [Backend] Received Query: ਗੁਰ ਮੇਰੀ
+[2026-02-13T01:39:33.328Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:39:33.329Z] ✂️ [Backend] Stripped Query (Matras Removed): ਗੁਰ ਮੇਰੀ
+[2026-02-13T01:39:33.339Z] 🏠 [Backend] No Local Match. Falling back to API...
+[2026-02-13T01:39:35.798Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:39:38.706Z] 🔍 [Backend] Received Query: ਗੁਰ ਮੇਰੀ ਪੂਜਾ
+[2026-02-13T01:39:38.708Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:39:38.708Z] ✂️ [Backend] Stripped Query (Matras Removed): ਗੁਰ ਮੇਰੀ ਪੂਜਾ
+[2026-02-13T01:39:38.715Z] 🏠 [Backend] No Local Match. Falling back to API...
+[2026-02-13T01:39:40.374Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:44:18.040Z] 🔍 [Backend] Received Query: ram ram bol ram ram
+[2026-02-13T01:44:18.042Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T01:44:20.165Z] ✅ [Backend] Match Found (Confidence: 100) for strategy 4
+[2026-02-13T01:54:10.428Z] 🔍 [Backend] Received Query: waheguru
+[2026-02-13T01:54:10.429Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T01:54:29.251Z] 🔍 [Backend] Received Query: shri mukhvas
+[2026-02-13T01:54:29.253Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T01:54:31.649Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:54:31.835Z] 🔍 [Backend] Received Query: shri mukhvas
+[2026-02-13T01:54:31.836Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T01:54:34.116Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:54:34.187Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:54:36.855Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T01:54:39.650Z] 🔍 [Backend] Received Query: shri mukhvas shri mukh
+[2026-02-13T01:54:39.651Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T01:54:41.274Z] ✅ [Backend] Match Found (Confidence: 50) for strategy 4
+[2026-02-13T01:55:00.118Z] 🔍 [Backend] Received Query: tera man ka banna
+[2026-02-13T01:55:00.119Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T01:55:02.041Z] ✅ [Backend] Match Found (Confidence: 70) for strategy 4
+[2026-02-13T01:55:17.519Z] 🔍 [Backend] Received Query: karta
+[2026-02-13T01:55:17.520Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T01:56:53.879Z] 🔍 [Backend] Received Query: slope bhi magale per leke likhe tunde
+[2026-02-13T01:56:53.880Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T01:56:59.621Z] 🔍 [Backend] Received Query: slope bhi magale per leke tunde
+[2026-02-13T01:56:59.622Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T01:57:10.196Z] 🔍 [Backend] Received Query: yah to chanda
+[2026-02-13T01:57:10.198Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T01:57:11.523Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T01:58:59.194Z] 🔍 [Backend] Received Query: ਚੇਤਨੀ ਮਨਿ ਆਪਣੈ ਸੁਚੇਤ ਛੁਟੇ ਤਿਲ ਬੁਆੜ ਜਿਉ ਸੁੰਞੇ ਅੰਦਰ ਕੇਤ ਏਤੈ ਅੰਦਰਿ ਛੁਟਿਆ ਕਹੁ ਨਾਨਕ ਸਾਨਾ ਅਲੀਐ ਫੁਲੀਐ ਬਪੁੜੇ ਭੀ ਤਨ ਵਿਚ ਸੁਆ ਪਉੜੀ ਆਪਨੇ ਆਪ ਸਾਜਿਓ ਆਪੀਨੈ ਰਚਿਓ ਨਾਉ ਦੁਇ ਕੁਦਰਤ ਸਾਜੀਐ ਕਰਿ ਆਸਣ ਡਿਠੋ ਚਾਉ
+[2026-02-13T01:58:59.196Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:58:59.196Z] ✂️ [Backend] Stripped Query (Matras Removed): ਚੇਤਨੀ ਮਨਿ ਆਪਣੈ ਸੁਚੇਤ ਛੁਟੇ ਤਿਲ ਬੁਆੜ ਜਿਉ ਸੁੰਞੇ ਅੰਦਰ ਕੇਤ ਏਤੈ ਅੰਦਰਿ ਛੁਟਿਆ ਕਹੁ ਨਾਨਕ ਸਾਨਾ ਅਲੀਐ ਫੁਲੀਐ ਬਪੁੜੇ ਭੀ ਤਨ ਵਿਚ ਸੁਆ ਪਉੜੀ ਆਪਨੇ ਆਪ ਸਾਜਿਓ ਆਪੀਨੈ ਰਚਿਓ ਨਾਉ ਦੁਇ ਕੁਦਰਤ ਸਾਜੀਐ ਕਰਿ ਆਸਣ ਡਿਠੋ ਚਾਉ
+[2026-02-13T01:59:10.124Z] 🔍 [Backend] Received Query: ਆਸਾ ਦੀ ਵਾਰ
+[2026-02-13T01:59:10.125Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:59:10.127Z] ✂️ [Backend] Stripped Query (Matras Removed): ਆਸਾ ਦੀ ਵਾਰ
+[2026-02-13T01:59:51.452Z] 🔍 [Backend] Received Query: ਹਰਿ ਅੰਮ੍ਰਿਤ ਭਿੰਨੀ ਲੈਣਾ
+[2026-02-13T01:59:51.454Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T01:59:51.455Z] ✂️ [Backend] Stripped Query (Matras Removed): ਹਰਿ ਅੰਮ੍ਰਿਤ ਭਿੰਨੀ ਲੈਣਾ
+[2026-02-13T01:59:53.122Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 45)
+[2026-02-13T02:00:06.486Z] 🔍 [Backend] Received Query: ਪੌੜੀ ਆਪੀ ਨੇ ਆਪ ਸਾਜਿਓ
+[2026-02-13T02:00:06.487Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:00:06.488Z] ✂️ [Backend] Stripped Query (Matras Removed): ਪੌੜੀ ਆਪੀ ਨੇ ਆਪ ਸਾਜਿਓ
+[2026-02-13T02:00:31.697Z] 🔍 [Backend] Received Query: ਆਪੀਨੈ ਆਪ ਸਾਜਿਓ ਆਪੀਨੈ ਰਚਿਓ ਨਾਉ ਦੁਗ ਸਾਜੀਐ
+[2026-02-13T02:00:31.699Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:00:31.701Z] ✂️ [Backend] Stripped Query (Matras Removed): ਆਪੀਨੈ ਆਪ ਸਾਜਿਓ ਆਪੀਨੈ ਰਚਿਓ ਨਾਉ ਦੁਗ ਸਾਜੀਐ
+[2026-02-13T02:04:17.782Z] 🔍 [Backend] Received Query: ਤੁਮ ਸਾਜ ਦਿਆ
+[2026-02-13T02:04:17.785Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:17.786Z] ✂️ [Backend] Stripped Query (Matras Removed): ਤੁਮ ਸਾਜ ਦਿਆ
+[2026-02-13T02:04:21.285Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:04:22.378Z] 🔍 [Backend] Received Query: ਤੁਮ ਸਾਜ ਦਇਆ
+[2026-02-13T02:04:22.379Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:22.380Z] ✂️ [Backend] Stripped Query (Matras Removed): ਤੁਮ ਸਾਜ ਦਇਆ
+[2026-02-13T02:04:24.636Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:04:31.596Z] 🔍 [Backend] Received Query: ਸੁਖੁ ਪਾਵ ਮੇਰੇ
+[2026-02-13T02:04:31.597Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:31.598Z] ✂️ [Backend] Stripped Query (Matras Removed): ਸੁਖੁ ਪਾਵ ਮੇਰੇ
+[2026-02-13T02:04:33.692Z] 🔍 [Backend] Received Query: ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ
+[2026-02-13T02:04:33.694Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:33.695Z] ✂️ [Backend] Stripped Query (Matras Removed): ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ
+[2026-02-13T02:04:34.588Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:04:36.006Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 45)
+[2026-02-13T02:04:43.003Z] 🔍 [Backend] Received Query: ਤਾ ਸੁਖ ਪਾਵਹੁ ਮੇਰੇ
+[2026-02-13T02:04:43.004Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:43.005Z] ✂️ [Backend] Stripped Query (Matras Removed): ਤਾ ਸੁਖ ਪਾਵਹੁ ਮੇਰੇ
+[2026-02-13T02:04:45.266Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 45)
+[2026-02-13T02:04:52.425Z] 🔍 [Backend] Received Query: ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ
+[2026-02-13T02:04:52.426Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:52.427Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ
+[2026-02-13T02:04:53.199Z] 🔍 [Backend] Received Query: ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ
+[2026-02-13T02:04:53.201Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:53.202Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ
+[2026-02-13T02:04:54.197Z] 🔍 [Backend] Received Query: ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮ
+[2026-02-13T02:04:54.198Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:54.199Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮ
+[2026-02-13T02:04:54.286Z] 🔍 [Backend] Received Query: ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ
+[2026-02-13T02:04:54.287Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:54.288Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ
+[2026-02-13T02:04:55.992Z] 🔍 [Backend] Received Query: ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ
+[2026-02-13T02:04:55.994Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:55.995Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ
+[2026-02-13T02:04:56.709Z] 🔍 [Backend] Received Query: ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ ਧਿਆ
+[2026-02-13T02:04:56.716Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:56.718Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ ਧਿਆ
+[2026-02-13T02:04:57.084Z] 🔍 [Backend] Received Query: ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ ਧਿਆਵ
+[2026-02-13T02:04:57.085Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:57.087Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ ਧਿਆਵ
+[2026-02-13T02:04:58.504Z] 🔍 [Backend] Received Query: ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ ਧਿਆਵ ਮੁ
+[2026-02-13T02:04:58.505Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:58.506Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ ਧਿਆਵ ਮੁ
+[2026-02-13T02:04:58.681Z] 🔍 [Backend] Received Query: ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ ਧਿਆਵ ਮੁਗ
+[2026-02-13T02:04:58.682Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:58.683Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ ਧਿਆਵ ਮੁਗ
+[2026-02-13T02:04:58.800Z] 🔍 [Backend] Received Query: ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ ਧਿਆਵ ਮੁਗਦ
+[2026-02-13T02:04:58.801Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:04:58.802Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਆਗੈ ਜੈ ਮਸਾ ਸਾਚ ਧਿਆਵ ਮੁਗਦ
+[2026-02-13T02:05:02.199Z] 🔍 [Backend] Received Query: ਮਨਾ
+[2026-02-13T02:05:02.201Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:05:02.202Z] ✂️ [Backend] Stripped Query (Matras Removed): ਮਨਾ
+[2026-02-13T02:05:02.901Z] 🔍 [Backend] Received Query: ਤੁਮ ਸਾਜ ਦਇਆ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਤਾ ਸੁਖ ਪਾਵਹੁ ਮੇਰੇ ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਸਾਚ ਧਿਆਵ ਮੁਗਦ ਮਨਾ
+[2026-02-13T02:05:02.902Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:05:02.903Z] ✂️ [Backend] Stripped Query (Matras Removed): ਤੁਮ ਸਾਜ ਦਇਆ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਤਾ ਸੁਖ ਪਾਵਹੁ ਮੇਰੇ ਮਨਾ ਤਾ ਸੁਖੁ ਪਾਵ ਮੇਰੇ ਮਨਾ ਹਮ ਸਾਚ ਦਇਆ ਸਾਚ ਧਿਆਵ ਮੁਗਦ ਮਨਾ
+[2026-02-13T02:05:14.438Z] 🔍 [Backend] Received Query: ਸਾਚ ਧਿਆਵਹੁ ਮੁਗਦ ਮਨਾ
+[2026-02-13T02:05:14.440Z] 📝 [Backend] Mode: Gurmukhi (PA)
+[2026-02-13T02:05:14.441Z] ✂️ [Backend] Stripped Query (Matras Removed): ਸਾਚ ਧਿਆਵਹੁ ਮੁਗਦ ਮਨਾ
+[2026-02-13T02:05:17.346Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 45)
+[2026-02-13T02:06:07.774Z] 🔍 [Backend] Received Query: tum saj the
+[2026-02-13T02:06:07.775Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:06:09.801Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:06:11.074Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:06:11.985Z] 🔍 [Backend] Received Query: tum saj the mana
+[2026-02-13T02:06:11.986Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:06:13.457Z] ✅ [Backend] Match Found (Confidence: 50) for strategy 4
+[2026-02-13T02:07:09.604Z] 🔍 [Backend] Received Query: bin
+[2026-02-13T02:07:09.605Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:07:50.389Z] 🔍 [Backend] Received Query: apradh
+[2026-02-13T02:07:50.391Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:07:56.577Z] 🔍 [Backend] Received Query: pare pete rahte
+[2026-02-13T02:07:56.578Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:07:58.670Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:08:00.482Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:08:07.098Z] 🔍 [Backend] Received Query: suno be
+[2026-02-13T02:08:07.099Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:08:09.583Z] ⚠️ [Backend] Match Discarded (Low Confidence: 30 < 55)
+[2026-02-13T02:08:11.401Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:08:14.589Z] 🔍 [Backend] Received Query: swami mere
+[2026-02-13T02:08:14.590Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:08:16.351Z] ⚠️ [Backend] Match Discarded (Low Confidence: 30 < 55)
+[2026-02-13T02:08:17.069Z] 🔍 [Backend] Received Query: swami mere ram
+[2026-02-13T02:08:17.069Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:08:18.385Z] ✅ [Backend] Match Found (Confidence: 70) for strategy 4
+[2026-02-13T02:08:19.600Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:08:41.982Z] 🔍 [Backend] Received Query: suno
+[2026-02-13T02:08:41.983Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:08:45.685Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:08:45.718Z] 🔍 [Backend] Received Query: suno benten
+[2026-02-13T02:08:45.719Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:08:46.863Z] ✅ [Backend] Match Found (Confidence: 100) for strategy 2
+[2026-02-13T02:08:48.235Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:08:49.185Z] 🔍 [Backend] Received Query: suno benten swami mere
+[2026-02-13T02:08:49.186Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:08:50.471Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:08:50.501Z] ✅ [Backend] Match Found (Confidence: 70) for strategy 4
+[2026-02-13T02:09:27.409Z] 🔍 [Backend] Received Query: apradh pare pete rahte swami mere ram suno benten swami mere ram swami mere
+[2026-02-13T02:09:27.410Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:09:29.540Z] 🔍 [Backend] Received Query: apradh pare pete rahte swami mere ram suno benten swami mere ram swami mere ram
+[2026-02-13T02:09:29.542Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:09:46.879Z] 🔍 [Backend] Received Query: suno benam piya
+[2026-02-13T02:09:46.881Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:09:49.959Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:09:51.157Z] 🔍 [Backend] Received Query: suno benam piya swami
+[2026-02-13T02:09:51.160Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:09:51.680Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:09:52.744Z] 🔍 [Backend] Received Query: suno benam piya swami mere
+[2026-02-13T02:09:52.746Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:09:53.172Z] ✅ [Backend] Match Found (Confidence: 70) for strategy 4
+[2026-02-13T02:09:54.881Z] 🔍 [Backend] Received Query: suno benam piya swami mere ram
+[2026-02-13T02:09:54.882Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:09:59.910Z] 🔍 [Backend] Received Query: kot
+[2026-02-13T02:09:59.911Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:10:03.056Z] ✅ [Backend] Match Found (Confidence: 100) for strategy 4
+[2026-02-13T02:10:07.246Z] 🔍 [Backend] Received Query: suno benam piya swami mere ram par
+[2026-02-13T02:10:07.247Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:10:32.282Z] 🔍 [Backend] Received Query: mere
+[2026-02-13T02:10:32.284Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:10:35.010Z] 🔍 [Backend] Received Query: mere ram
+[2026-02-13T02:10:35.011Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:10:35.530Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:10:37.225Z] ✅ [Backend] Match Found (Confidence: 100) for strategy 4
+[2026-02-13T02:10:39.173Z] 🔍 [Backend] Received Query: ham sadhu saran
+[2026-02-13T02:10:39.174Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:10:40.703Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:10:42.538Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:10:54.111Z] 🔍 [Backend] Received Query: mehma nam
+[2026-02-13T02:10:54.112Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:10:56.624Z] ⚠️ [Backend] Match Discarded (Low Confidence: 30 < 55)
+[2026-02-13T02:10:58.326Z] 🔍 [Backend] Received Query: mehma nam kahan log bar
+[2026-02-13T02:10:58.327Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:10:58.923Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:10:59.630Z] ✅ [Backend] Match Found (Confidence: 70) for strategy 4
+[2026-02-13T02:11:07.651Z] 🔍 [Backend] Received Query: no haram hai
+[2026-02-13T02:11:07.652Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:11:10.035Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:11:10.512Z] 🔍 [Backend] Received Query: no haram hai vandan te
+[2026-02-13T02:11:10.513Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:11:11.798Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:11:13.043Z] 🔍 [Backend] Received Query: no haram hai bandhan te tut
+[2026-02-13T02:11:13.044Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:11:17.133Z] 🔍 [Backend] Received Query: mehma nam kahan log bar no haram hai bandhan te tutan
+[2026-02-13T02:11:17.136Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:11:18.909Z] 🔍 [Backend] Received Query: mehma nam kahan log bar no haram hai bandhan de tut
+[2026-02-13T02:11:18.910Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:12:50.087Z] 🔍 [Backend] Received Query: ram kahate
+[2026-02-13T02:12:50.088Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:12:52.435Z] ⚠️ [Backend] Match Discarded (Low Confidence: 30 < 55)
+[2026-02-13T02:12:54.442Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:12:54.666Z] 🔍 [Backend] Received Query: bandhan tera
+[2026-02-13T02:12:54.667Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:12:56.034Z] ⚠️ [Backend] Match Discarded (Low Confidence: 30 < 55)
+[2026-02-13T02:12:57.644Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:13:03.657Z] 🔍 [Backend] Received Query: bandhan tera bandhan to
+[2026-02-13T02:13:03.658Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:13:05.531Z] ✅ [Backend] Match Found (Confidence: 50) for strategy 4
+[2026-02-13T02:13:12.646Z] 🔍 [Backend] Received Query: pankti tut
+[2026-02-13T02:13:12.647Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:13:14.989Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:13:17.287Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:13:23.709Z] 🔍 [Backend] Received Query: ram
+[2026-02-13T02:13:23.710Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:13:31.569Z] 🔍 [Backend] Received Query: dil tut
+[2026-02-13T02:13:31.570Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:13:33.995Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:13:35.555Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:13:35.941Z] 🔍 [Backend] Received Query: dil tut a
+[2026-02-13T02:13:35.942Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:13:37.498Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:13:37.912Z] 🔍 [Backend] Received Query: dil tut a ram
+[2026-02-13T02:13:37.913Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:13:38.709Z] ⚠️ [Backend] Match Discarded (Low Confidence: 50 < 55)
+[2026-02-13T02:17:41.842Z] 🔍 [Backend] Received Query: mahima mahima
+[2026-02-13T02:17:41.843Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:17:50.535Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:17:54.619Z] 🔍 [Backend] Received Query: meh
+[2026-02-13T02:17:54.620Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:18:01.576Z] 🔍 [Backend] Received Query: kahan log
+[2026-02-13T02:18:01.579Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:18:03.893Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:18:05.803Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:18:06.200Z] 🔍 [Backend] Received Query: kahan log
+[2026-02-13T02:18:06.201Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:18:07.580Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:18:09.617Z] 🔍 [Backend] Received Query: kahan log vandan te tut
+[2026-02-13T02:18:09.619Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:18:09.639Z] ⚠️ [Backend] Match Discarded (Low Confidence: 0 < 55)
+[2026-02-13T02:18:29.477Z] 🔍 [Backend] Received Query: a ram kah
+[2026-02-13T02:18:29.478Z] 📝 [Backend] Mode: English/Roman
+[2026-02-13T02:18:31.547Z] ✅ [Backend] Match Found (Confidence: 70) for strategy 4

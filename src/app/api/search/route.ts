@@ -1,7 +1,17 @@
 import { NextResponse } from "next/server";
 import { buildApiUrl } from "@sttm/banidb";
 import Fuse from "fuse.js";
-// Helper: Sleep
+import fs from "fs";
+import path from "path";
+
+// Helper: Logger
+const logFile = path.join(process.cwd(), "search-debug.log");
+function log(message: string) {
+    const timestamp = new Date().toISOString();
+    const logMsg = `[${timestamp}] ${message}\n`;
+    fs.appendFileSync(logFile, logMsg);
+    console.log(message);
+}
 const sleep = (ms: number) => new Promise(res => setTimeout(res, ms));
 
 // 🌍 GLOBAL CACHE for Bani List (Lazy Loaded)
@@ -37,27 +47,7 @@ function stripGurmukhiMatras(text: string) {
 
 // 🗺️ MANUAL BANI MAP (Fallback/Priority for common Nitnem)
 // IDs verified against GurbaniDB v2 API
-// 🗺️ MANUAL BANI MAP (Fallback/Priority for common Nitnem)
-// IDs verified against GurbaniDB v2 API
 const MANUAL_BANI_MAP: { [key: string]: number } = {
-    // // English Keys
-    // "japji": 2, "jap ji": 2, "japji sahib": 2,
-    // "jaap": 4, "jaap sahib": 4,
-    // "tav prasad": 6, "savaiye": 6,
-    // "chaupai": 9, "choupai": 9, "chaupai sahib": 9,
-    // "anand": 10, "anand sahib": 10,
-    // "rehras": 21, "rehiras": 21, "rahras": 21, "sodar": 21, "rehras sahib": 21,
-    // "sohila": 23, "kirtan sohila": 23, "sohila sahib": 23,
-    // "ardaas": 24, "ardas": 24, "ardaas sahib": 24,
-    // "sukhmani": 31, "sukhmani sahib": 31,
-    // "asa di var": 11, "asa di vaar": 11,
-    // "shabad hazare": 3, "shabad hazaare": 3,
-    // "salok mahala 9": 30, "salok mahala nou": 30, "salok mahala nau": 30, "salok mahala nava": 30,
-    // "barah maha": 136, "baarah maahaa": 136,
-    // "dukh bhanjani": 178,
-    // "laavan": 773, "lavan": 773,
-    // "aarti": 13, "arti": 13,
-
     // Gurmukhi Keys (New)
     "ਜਪੁ": 2, "ਜਪ": 2, "ਜਪੁਜੀ": 2, "ਜਪੁ ਜੀ ਸਾਹਿਬ": 2,
     "ਜਾਪੁ": 4, "ਜਾਪ": 4, "ਜਾਪੁ ਸਾਹਿਬ": 4,
@@ -75,10 +65,6 @@ const MANUAL_BANI_MAP: { [key: string]: number } = {
     "ਲਾਵਾਂ": 773,
     "ਆਰਤੀ": 13
 };
-
-// ... (rest of imports/helpers)
-
-// ...
 
 // 💎 MANUAL KEYWORD/SHABAD MAP (For Simran or specific verses)
 const MANUAL_KEYWORD_MAP: { [key: string]: number } = {
@@ -118,6 +104,25 @@ async function getBaniList() {
     return [];
 }
 
+// Helper: Convert Hindi (Devanagari) to Gurmukhi
+function hindiToGurmukhi(text: string) {
+    const map: { [key: string]: string } = {
+        // Vowels
+        'अ': 'ਅ', 'आ': 'ਆ', 'इ': 'ਇ', 'ई': 'ਈ', 'उ': 'ਉ', 'ऊ': 'ਊ', 'ए': 'ਏ', 'ऐ': 'ਐ', 'ओ': 'ਓ', 'औ': 'ਔ',
+        // Consonants
+        'क': 'ਕ', 'ख': 'ਖ', 'ग': 'ਗ', 'घ': 'ਘ', 'ङ': 'ਙ',
+        'च': 'ਚ', 'छ': 'ਛ', 'ज': 'ਜ', 'झ': 'ਝ', 'ञ': 'ਞ',
+        'ट': 'ਟ', 'ठ': 'ਠ', 'ड': 'ਡ', 'ढ': 'ਢ', 'ण': 'ਣ',
+        'त': 'ਤ', 'थ': 'ਥ', 'द': 'ਦ', 'ध': 'ਧ', 'न': 'ਨ',
+        'प': 'ਪ', 'फ': 'ਫ', 'ब': 'ਬ', 'भ': 'ਭ', 'म': 'ਮ',
+        'य': 'ਯ', 'र': 'ਰ', 'ल': 'ਲ', 'व': 'ਵ', 'श': 'ਸ਼', 'ष': 'ਸ਼', 'स': 'ਸ', 'ह': 'ਹ',
+        // Matras
+        'ा': 'ਾ', 'ि': 'ਿ', 'ी': 'ੀ', 'ु': 'ੁ', 'ू': 'ੂ', 'े': 'ੇ', 'ै': 'ੈ', 'ो': 'ੋ', 'ौ': 'ੌ',
+        '्': '੍', 'ं': 'ੰ', 'ः': 'ਃ', '़': '਼', 'ँ': 'ੱ' // Chandrabindu approx to Adhak
+    };
+    return text.split('').map(char => map[char] || char).join('');
+}
+
 export async function POST(req: Request) {
     let trimmedQuery = "";
     try {
@@ -130,14 +135,21 @@ export async function POST(req: Request) {
 
         trimmedQuery = query.trim().toLowerCase();
 
-        console.log("🔍 [Backend] Received Query:", trimmedQuery);
-        const isGurmukhi = /[\u0A00-\u0A7F]/.test(trimmedQuery);
-        console.log("📝 [Backend] Mode:", isGurmukhi ? "Gurmukhi (PA)" : "English/Roman");
-
-        if (isGurmukhi) {
-            console.log("✂️ [Backend] Stripped Query (Matras Removed):", trimmedQuery); // calculated in frontend, verified here
+        // 🟢 HINDI DETECTION & CONVERSION
+        const isHindi = /[\u0900-\u097F]/.test(trimmedQuery);
+        if (isHindi) {
+            const converted = hindiToGurmukhi(trimmedQuery);
+            log(`🇮🇳 [Backend] Detected Hindi: ${trimmedQuery} -> Converted to Gurmukhi: ${converted}`);
+            trimmedQuery = converted;
         }
 
+        log(`🔍 [Backend] Received Query: ${trimmedQuery}`);
+        const isGurmukhi = /[\u0A00-\u0A7F]/.test(trimmedQuery);
+        log(`📝 [Backend] Mode: ${isGurmukhi ? "Gurmukhi (PA)" : "English/Roman"}`);
+
+        if (isGurmukhi) {
+            log(`✂️ [Backend] Stripped Query (Matras Removed): ${trimmedQuery}`);
+        }
 
         // 1. 🤖 BANI DETECTION (Manual Map + Automatic)
         let manualBaniId: number | null = null;
@@ -248,8 +260,6 @@ export async function POST(req: Request) {
 
         if (!finalShabadId) {
             // 🏗️ STRATEGY CONSTRUCTION
-            // User Request: "Agar n sune (full text fail), to fir letters se search kare (fallback)"
-
             const isGurmukhi = /[\u0A00-\u0A7F]/.test(trimmedQuery);
             const getAcronym = (t: string) => t.split(/\s+/).map(w => w[0]).filter(Boolean).join("");
             const generatedAcronym = getAcronym(trimmedQuery);
@@ -258,34 +268,22 @@ export async function POST(req: Request) {
             let strategies: any[] = [];
 
             if (isAcronym) {
-                // If user explicitly asked for acronym (unlikely in voice flow, but possible via UI)
                 strategies.push({ q: acronym || trimmedQuery, type: 1 });
                 strategies.push({ q: acronym || trimmedQuery, type: 0 });
             } else if (isGurmukhi) {
-                // 🟠 Gurmukhi Input Strategy
-                // Strategy: Convert full text to First Letter Acronym (Gurmukhi) and search using that (Type 3).
-                // This is robust against matra variations (e.g. "ਸੋ ਸਤਿਗੁਰੁ" -> "ਸਸ" matches correctly).
-
-                const gAcronym = trimmedQuery.split(/\s+/).map(w => w[0]).join("");
-
-                // Type 3: First Letters Search (Gurmukhi) - usually expects acronym string
-                strategies.push({ q: gAcronym, type: 3 });
-
-                // Fallback: Use generated acronym with Type 0 if different (though Type 3 seems standard for GM acronyms)
-                if (wordCount > 1) {
-                    strategies.push({ q: generatedAcronym, type: 0 }); // Just in case type 0 differs
-                }
-            } else {
-                // 🔵 English/Roman Input Strategy
-                // Type 4: English Full Word/Fuzzy
+                // 1. Full Line Fuzzy Search (Best for full speech)
                 strategies.push({ q: trimmedQuery, type: 4 });
 
-                // Broad search (Type 8 or similar if supported, otherwise stick to 4)
-                strategies.push({ q: trimmedQuery, type: 2 }); // Type 2 is often English Fuzzy
-
-                // 2. 🥈 FALLBACK: First Letters (Acronym)
+                const gAcronym = trimmedQuery.split(/\s+/).map(w => w[0]).join("");
+                strategies.push({ q: gAcronym, type: 3 });
                 if (wordCount > 1) {
-                    strategies.push({ q: generatedAcronym, type: 1 }); // English First Letters
+                    strategies.push({ q: generatedAcronym, type: 0 });
+                }
+            } else {
+                strategies.push({ q: trimmedQuery, type: 4 });
+                strategies.push({ q: trimmedQuery, type: 2 });
+                if (wordCount > 1) {
+                    strategies.push({ q: generatedAcronym, type: 1 });
                 }
             }
 
@@ -317,7 +315,6 @@ export async function POST(req: Request) {
                             const trans = (cand.transliteration?.english || "").toLowerCase();
                             const normalizedTrans = normalizeForMatch(trans);
 
-                            // Determine if we should match against Gurmukhi or English
                             const isGurmukhiInput = /[\u0A00-\u0A7F]/.test(trimmedQuery);
                             let lineAcronym = "";
 
@@ -330,23 +327,16 @@ export async function POST(req: Request) {
                             }
 
                             let currentScore = 0;
-
                             const isCurrentStrategyAcronym = isAcronym || strategy.type === 1 || strategy.type === 0;
 
                             if (isCurrentStrategyAcronym) {
-                                // 1. Acronym Match (Highest Priority in Acronym mode)
                                 if (lineAcronym === normalizedQuery) currentScore += 1000;
                                 else if (lineAcronym.startsWith(normalizedQuery)) currentScore += 500;
                                 else if (lineAcronym.includes(normalizedQuery)) currentScore += 200;
-
-                                // 2. Phonetic Overlap
                                 const common = [...normalizedQuery].filter(char => lineAcronym.includes(char)).length;
                                 currentScore += (common / Math.max(normalizedQuery.length, 1)) * 100;
                             } else {
-                                // 1. Full Text Match (Highest Priority in Full Mode)
                                 if (normalizedTrans.includes(normalizeForMatch(trimmedQuery))) currentScore += 1000;
-
-                                // 2. Word by Word match
                                 const queryWords = trimmedQuery.split(/\s+/).filter(w => w.length >= 2);
                                 let matchedWords = 0;
                                 queryWords.forEach(w => {
@@ -379,15 +369,13 @@ export async function POST(req: Request) {
 
                             let maxScore = 0;
 
-                            // 1. Acronym Score Check (Always try this, it's robust)
                             const queryAcronym = treatAsAcronym
-                                ? targetQuery.replace(/\s+/g, '').toLowerCase() // Input is already acronym
+                                ? targetQuery.replace(/\s+/g, '').toLowerCase()
                                 : (isGurmukhiInput
                                     ? targetQuery.split(/\s+/).map(w => w[0]).join("")
                                     : targetQuery.split(/\s+/).map(w => w[0]).join("").toLowerCase());
 
                             let acronymScore = 0;
-                            // Only trust acronym if it has enough length to be unique-ish
                             if (queryAcronym.length >= 3) {
                                 if (lineAcronym === queryAcronym) acronymScore = 85;
                                 else if (lineAcronym.startsWith(queryAcronym)) acronymScore = 70;
@@ -399,17 +387,25 @@ export async function POST(req: Request) {
                             }
                             maxScore = Math.max(maxScore, acronymScore);
 
-                            // 2. Full Text Score Check (Only if input is full text)
                             if (!treatAsAcronym) {
                                 let textScore = 0;
                                 if (isGurmukhiInput) {
-                                    // Gurmukhi Full Text Matching (Matra Stripped)
                                     const rawGText = (cand.gurmukhi?.unicode || cand.gurmukhi || "").trim();
                                     const gText = stripGurmukhiMatras(rawGText);
                                     const strippedTarget = stripGurmukhiMatras(targetQuery);
 
                                     if (gText === strippedTarget) textScore += 95;
                                     else if (gText.includes(strippedTarget) || strippedTarget.includes(gText)) textScore += 80;
+
+                                    const queryWords = strippedTarget.split(/\s+/).filter(w => w.length >= 2);
+                                    if (queryWords.length > 0) {
+                                        let matchedWords = 0;
+                                        queryWords.forEach(w => {
+                                            if (gText.includes(w)) matchedWords++;
+                                        });
+                                        const wordScore = (matchedWords / queryWords.length) * 85;
+                                        textScore = Math.max(textScore, wordScore);
+                                    }
                                 } else {
                                     const normalizedTarget = normalizeForMatch(targetQuery);
                                     if (normalizedTrans === normalizedTarget) textScore += 95;
@@ -431,17 +427,16 @@ export async function POST(req: Request) {
                         };
 
                         const isCurrentStrategyAcronym = isAcronym || strategy.type === 1 || strategy.type === 0;
-                        // Use the strategy's query (which is already the acronym in fallback) for scoring
                         const confidence = calculateConfidence(bestCandidate, strategy.q, isCurrentStrategyAcronym);
-
-                        // 🎯 ADAPTIVE THRESHOLD: Lower for longer phrases to be more flexible
                         const threshold = trimmedQuery.length > 15 ? 45 : 55;
 
                         if (confidence >= threshold) {
+                            log(`✅ [Backend] Match Found (Confidence: ${confidence}) for strategy ${strategy.type}`);
                             searchData = { ...data, verses: [bestCandidate], confidence };
                             successfulType = strategy.type;
                             break;
                         } else {
+                            log(`⚠️ [Backend] Match Discarded (Low Confidence: ${confidence} < ${threshold})`);
                             searchData = null;
                         }
                     }
@@ -459,7 +454,6 @@ export async function POST(req: Request) {
             return NextResponse.json({ match: null, shabad: null });
         }
 
-        // 4. Fetch full Shabad content
         const shabadUrl = `https://api.banidb.com/v2/shabads/${finalShabadId}`;
         const shabadResponse = await fetch(shabadUrl, {
             headers: { 'User-Agent': 'GurbaniProjector/1.0' }
@@ -482,13 +476,11 @@ export async function POST(req: Request) {
             };
         }).filter((line: any) => line.gurmukhi !== "");
 
-        // Find the matched line to return it explicitly
         let matchedLine = formattedLines[0];
         if (searchData && searchData.verses && searchData.verses[0]) {
             const targetVerseId = searchData.verses[0].verseId;
             matchedLine = formattedLines.find((l: any) => l.id === targetVerseId) || formattedLines[0];
         } else {
-            // Smart line match for manual keywords (e.g. "waheguru")
             let maxScore = 0;
             const minLen = trimmedQuery.length <= 5 ? 1 : 2;
             const queryWords = trimmedQuery.split(/\s+/).filter(w => w.length >= minLen);
@@ -519,6 +511,7 @@ export async function POST(req: Request) {
         });
 
     } catch (error: any) {
+        log(`❌ [Backend] Error: ${error.message}`);
         const status = error.response ? error.response.status : 500;
         return NextResponse.json({ error: "Search failed", details: error.message }, { status: status });
     }

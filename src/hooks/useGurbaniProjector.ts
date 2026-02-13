@@ -2,6 +2,22 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import { cleanTranscript, isProbableNoise, attemptLocalMatch, getAcronym } from "@/util/gurbani";
 
+// 🕉️ WAHEGURU FALLBACK MODE
+const WAHEGURU_RESULT = {
+    match: { id: "waheguru" },
+    shabad: {
+        id: -1,
+        bani: "Simran",
+        lines: [{
+            id: "waheguru",
+            gurmukhi: "ਵਾਹਿਗੁਰੂ ਵਾਹਿਗੁਰੂ ਵਾਹਿਗੁਰੂ ਵਾਹਿਗੁਰੂ",
+            translation: "Waheguru Waheguru Waheguru Waheguru",
+            transliteration: "Waheguru Waheguru Waheguru Waheguru",
+            transliteration_hi: "वाहेगुरु वाहेगुरु वाहेगुरु वाहेगुरु"
+        }]
+    }
+};
+
 export const useGurbaniProjector = () => {
     const [result, setResult] = useState<any>(null);
     const [errorMessage, setErrorMessage] = useState("");
@@ -68,6 +84,7 @@ export const useGurbaniProjector = () => {
                     // Don't set error if it's just a partial word being accumulated
                     if (spokenText.split(" ").length > 2) {
                         setErrorMessage("No Match Found");
+                        setResult(WAHEGURU_RESULT); // �️ Show Waheguru instead of clearing
                         setLastSearch(""); // Clear text from display
                         // 🛑 Erase the failed line so we can detect the next line freshly
                         previousTranscriptRef.current = fullTranscriptAtTime;
@@ -121,11 +138,19 @@ export const useGurbaniProjector = () => {
 
                 // Only search if we have a significant phrase (usually 2+ words)
                 // or if it's a long single word that's likely a complete short verse.
-                if (words.length >= 2 || (words.length === 1 && words[0].length > 2)) { // Reduced length from 4 to 2 for Gurmukhi words
+                if (words.length >= 2 || (words.length === 1 && words[0].length > 2)) {
                     console.log("Full line pause detected. Searching for:", currentUnmatchedSpeech);
                     searchLine(currentUnmatchedSpeech, transcript);
                 }
-            }, 2000);
+            }, 1500); // ⚡ Optimized for Fast Kirtan (1.5s pause)
+
+            // 🚀 FAST MODE: If line is long (> 10 words), search immediately!
+            const words = currentUnmatchedSpeech.trim().split(/\s+/);
+            if (words.length > 10) {
+                console.log("🚀 Long line detected (Fast Mode). Searching immediately...");
+                if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
+                searchLine(currentUnmatchedSpeech, transcript);
+            }
         }
     }, [transcript, searchLine]);
 
@@ -141,7 +166,7 @@ export const useGurbaniProjector = () => {
         }
 
         try {
-            SpeechRecognition.startListening({ continuous: true, language: 'pa-IN' });
+            SpeechRecognition.startListening({ continuous: true, language: 'en-IN' });
             if (typeof navigator !== 'undefined' && 'wakeLock' in navigator) {
                 (navigator as any).wakeLock.request('screen').then((wl: any) => wakeLockRef.current = wl).catch(() => { });
             }
